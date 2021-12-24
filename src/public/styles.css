@@ -1,7 +1,0 @@
-:root {
-	--our-purple: rgb(183 80 197);
-}
-
-h1 {
-	color: var(--our-purple);
-}

@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import helmet from 'helmet'
+import path from 'path'
 
 dotenv.parse('.env')
 
@@ -9,7 +10,7 @@ app.set('view engine', 'ejs')
 app.set('views', 'src/views')
 
 app.use(helmet())
-app.use('/public', express.static('src/public'))
+app.use('/public', express.static(path.join(process.cwd(), 'src/public')))
 
 /* Routes */
 app.get('/', (req, res) => {
@@ -17,7 +18,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-	res.set('Content-Type', 'text/html')
 	res.render('home.ejs')
 })
 
