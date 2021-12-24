@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import express from 'express'
+import path from 'path'
 
 dotenv.parse('.env')
 
@@ -13,9 +14,37 @@ dotenv.parse('.env')
 const port = process.env.port || String(3000)
 
 const app = express()
+app.set('view engine', 'ejs')
+app.set('views', path.join(process.cwd(), 'src/views'))
 
 app.get('/', (req, res) => {
-	res.send('Hello World!')
+	res.redirect('/home')
+})
+
+app.get('/home', (req, res) => {
+	res.set('Content-Type', 'text/html')
+	res.send(`<h1>Home</h1>
+<a href='/templatetest'>Click to see Mustache man!</a>`)
+})
+
+app.get('/item/:item', (req, res) => {
+	res.send(`Item ${req.params.item}`)
+})
+
+app.get('/cart', (req, res) => {
+	res.send('Cart')
+})
+
+app.get('/profile', (req, res) => {
+	res.send('Profile')
+})
+
+app.get('/templatetest', (req, res) => {
+	res.render('templatetest.ejs', {
+		user: {
+			name: 'Mustache Man',
+		},
+	})
 })
 
 app.listen(port, () => {
