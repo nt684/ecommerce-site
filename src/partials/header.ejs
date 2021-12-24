@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/public/css/header.css" />
+		<style>
+			@font-face {
+				font-family: 'Roboto';
+				src: url('/public/fonts/Roboto-Regular-webfont.woff') format('woff');
+			}
+			@font-face {
+				font-family: 'Roboto-Light';
+				src: url('/public/fonts/Roboto-Light-webfont.woff') format('woff');
+			}
+		</style>
+		<title>Baking Site ^w^</title>
+	</head>
+	<body>
+		<header>
+			<div class="hamburger-menu">
+				<%- include('../public/feather/menu.svg'); -%>
+			</div>
+			<h1>Local Bakery</h1>
+			<div class="inner-flex">
+				<%- include('../public/feather/search.svg'); -%> <%-
+				include('../public/feather/user.svg'); -%>
+			</div>
+		</header>

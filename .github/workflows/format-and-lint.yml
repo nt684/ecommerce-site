@@ -1,0 +1,30 @@
+#  This workflow will format, lint, and auto fix
+name: Format and Lint CI
+on: [push, pull_request]
+
+jobs:
+  format-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Caching yarn dependencies
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
+
+      - name: Install yarn dependencies
+        run: yarn --frozen-lockfile
+
+      # Auto fixes formatting and linting issues
+      # Shows issues that need to be manually fixed
+      # More info: https://github.com/wearerequired/lint-action
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          prettier: true
+          eslint: true
+          stylelint: true
+          auto_fix: true
