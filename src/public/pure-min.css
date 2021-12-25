@@ -14,6 +14,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 html {
 	line-height: 1.15;
 	text-size-adjust: 100%;
+	font-family: sans-serif;
 }
 
 body {
@@ -31,13 +32,12 @@ h1 {
 
 hr {
 	box-sizing: content-box;
-	box-sizing: content-box;
 	height: 0;
 	overflow: visible;
 }
 
 pre {
-	font-family: monospace, monospace;
+	font-family: monospace;
 	font-size: 1em;
 }
 
@@ -60,7 +60,7 @@ strong {
 code,
 kbd,
 samp {
-	font-family: monospace, monospace;
+	font-family: monospace;
 	font-size: 1em;
 }
 
@@ -137,7 +137,6 @@ fieldset {
 
 legend {
 	box-sizing: border-box;
-	box-sizing: border-box;
 	color: inherit;
 	display: table;
 	max-width: 100%;
@@ -155,7 +154,6 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-	box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 }
@@ -195,10 +193,6 @@ template {
 	display: none;
 }
 
-html {
-	font-family: sans-serif;
-}
-
 .hidden,
 [hidden] {
 	display: none !important;
@@ -220,10 +214,10 @@ html {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	flex-flow: row wrap;
-	flex-flow: row wrap;
 	-ms-flex-line-pack: start;
 	align-content: flex-start;
 }
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	table .pure-g {
 		display: block;
@@ -439,11 +433,15 @@ html {
 	cursor: pointer;
 	-webkit-user-drag: none;
 	user-select: none;
-	user-select: none;
-	user-select: none;
-	user-select: none;
 	box-sizing: border-box;
-	box-sizing: border-box;
+	font-family: inherit;
+	font-size: 100%;
+	padding: 0.5em 1em;
+	color: rgb(0 0 0 / 80%);
+	border: none transparent;
+	background-color: #e6e6e6;
+	text-decoration: none;
+	border-radius: 2px;
 }
 
 .pure-button::-moz-focus-inner {
@@ -462,21 +460,13 @@ html {
 }
 
 .pure-button-group .pure-button {
+	margin: 0;
+	border-radius: 0;
+	border-right: 1px solid rgb(0 0 0 / 20%);
 	letter-spacing: normal;
 	word-spacing: normal;
 	vertical-align: top;
 	text-rendering: auto;
-}
-
-.pure-button {
-	font-family: inherit;
-	font-size: 100%;
-	padding: 0.5em 1em;
-	color: rgb(0 0 0 / 80%);
-	border: none transparent;
-	background-color: #e6e6e6;
-	text-decoration: none;
-	border-radius: 2px;
 }
 
 .pure-button-hover,
@@ -504,7 +494,6 @@ html {
 .pure-button-active,
 .pure-button:active {
 	box-shadow: 0 0 0 1px rgb(0 0 0 / 15%) inset, 0 0 6px rgb(0 0 0 / 20%) inset;
-	box-shadow: 0 0 0 1px rgb(0 0 0 / 15%) inset, 0 0 6px rgb(0 0 0 / 20%) inset;
 	border-color: #000;
 }
 
@@ -517,7 +506,6 @@ html {
 	background-image: none;
 	opacity: 0.4;
 	cursor: not-allowed;
-	box-shadow: none;
 	box-shadow: none;
 	pointer-events: none;
 }
@@ -532,12 +520,6 @@ a.pure-button-primary,
 a.pure-button-selected {
 	background-color: #0078e7;
 	color: #fff;
-}
-
-.pure-button-group .pure-button {
-	margin: 0;
-	border-radius: 0;
-	border-right: 1px solid rgb(0 0 0 / 20%);
 }
 
 .pure-button-group .pure-button:first-child {
@@ -571,10 +553,8 @@ a.pure-button-selected {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-shadow: inset 0 1px 3px #ddd;
-	box-shadow: inset 0 1px 3px #ddd;
 	border-radius: 4px;
 	vertical-align: middle;
-	box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -583,14 +563,45 @@ a.pure-button-selected {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-shadow: inset 0 1px 3px #ddd;
-	box-shadow: inset 0 1px 3px #ddd;
 	border-radius: 4px;
-	box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 .pure-form input[type='color'] {
 	padding: 0.2em 0.5em;
+}
+
+.pure-form select {
+	height: 2.25em;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.pure-form-stacked input[type='color'],
+.pure-form-stacked input[type='date'],
+.pure-form-stacked input[type='datetime-local'],
+.pure-form-stacked input[type='datetime'],
+.pure-form-stacked input[type='email'],
+.pure-form-stacked input[type='file'],
+.pure-form-stacked input[type='month'],
+.pure-form-stacked input[type='number'],
+.pure-form-stacked input[type='password'],
+.pure-form-stacked input[type='search'],
+.pure-form-stacked input[type='tel'],
+.pure-form-stacked input[type='text'],
+.pure-form-stacked input[type='time'],
+.pure-form-stacked input[type='url'],
+.pure-form-stacked input[type='week'],
+.pure-form-stacked label,
+.pure-form-stacked select,
+.pure-form-stacked textarea {
+	display: block;
+	margin: 0.25em 0;
+}
+
+.pure-form-stacked input:not([type]) {
+	display: block;
+	margin: 0.25em 0;
 }
 
 .pure-form input[type='color']:focus,
@@ -611,6 +622,16 @@ a.pure-button-selected {
 .pure-form textarea:focus {
 	outline: 0;
 	border-color: #129fea;
+}
+
+.pure-form .pure-group input,
+.pure-form .pure-group textarea {
+	display: block;
+	padding: 10px;
+	margin: 0 0 -1px;
+	border-radius: 0;
+	position: relative;
+	top: -1px;
 }
 
 .pure-form input:not([type]):focus {
@@ -679,12 +700,6 @@ a.pure-button-selected {
 	outline-color: #e9322d;
 }
 
-.pure-form select {
-	height: 2.25em;
-	border: 1px solid #ccc;
-	background-color: #fff;
-}
-
 .pure-form select[multiple] {
 	height: auto;
 }
@@ -706,45 +721,6 @@ a.pure-button-selected {
 	margin-bottom: 0.3em;
 	color: #333;
 	border-bottom: 1px solid #e5e5e5;
-}
-
-.pure-form-stacked input[type='color'],
-.pure-form-stacked input[type='date'],
-.pure-form-stacked input[type='datetime-local'],
-.pure-form-stacked input[type='datetime'],
-.pure-form-stacked input[type='email'],
-.pure-form-stacked input[type='file'],
-.pure-form-stacked input[type='month'],
-.pure-form-stacked input[type='number'],
-.pure-form-stacked input[type='password'],
-.pure-form-stacked input[type='search'],
-.pure-form-stacked input[type='tel'],
-.pure-form-stacked input[type='text'],
-.pure-form-stacked input[type='time'],
-.pure-form-stacked input[type='url'],
-.pure-form-stacked input[type='week'],
-.pure-form-stacked label,
-.pure-form-stacked select,
-.pure-form-stacked textarea {
-	display: block;
-	margin: 0.25em 0;
-}
-
-.pure-form-stacked input:not([type]) {
-	display: block;
-	margin: 0.25em 0;
-}
-
-.pure-form-aligned input,
-.pure-form-aligned select,
-.pure-form-aligned textarea,
-.pure-form-message-inline {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.pure-form-aligned textarea {
-	vertical-align: top;
 }
 
 .pure-form-aligned .pure-control-group {
@@ -773,16 +749,6 @@ a.pure-button-selected {
 	margin-bottom: 10px;
 }
 
-.pure-form .pure-group input,
-.pure-form .pure-group textarea {
-	display: block;
-	padding: 10px;
-	margin: 0 0 -1px;
-	border-radius: 0;
-	position: relative;
-	top: -1px;
-}
-
 .pure-form .pure-group input:focus,
 .pure-form .pure-group textarea:focus {
 	z-index: 3;
@@ -799,13 +765,6 @@ a.pure-button-selected {
 .pure-form .pure-group textarea:first-child:last-child {
 	top: 1px;
 	border-radius: 4px;
-	margin: 0;
-}
-
-.pure-form .pure-group input:last-child,
-.pure-form .pure-group textarea:last-child {
-	top: -2px;
-	border-radius: 0 0 4px 4px;
 	margin: 0;
 }
 
@@ -850,9 +809,22 @@ a.pure-button-selected {
 	color: #666;
 	font-size: 0.875em;
 }
+
 @media only screen and (max-width: 480px) {
 	.pure-form button[type='submit'] {
 		margin: 0.7em 0 0;
+	}
+
+	.pure-form-aligned input,
+	.pure-form-aligned select,
+	.pure-form-aligned textarea,
+	.pure-form-message-inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.pure-form-aligned textarea {
+		vertical-align: top;
 	}
 
 	.pure-form input:not([type]),
@@ -914,7 +886,6 @@ a.pure-button-selected {
 
 .pure-menu {
 	box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .pure-menu-fixed {
@@ -946,6 +917,7 @@ a.pure-button-selected {
 	display: block;
 	text-decoration: none;
 	white-space: nowrap;
+	padding: 0.5em 1em;
 }
 
 .pure-menu-horizontal {
@@ -957,11 +929,36 @@ a.pure-button-selected {
 	display: inline-block;
 }
 
-.pure-menu-horizontal .pure-menu-heading,
-.pure-menu-horizontal .pure-menu-item,
+.pure-menu-separator {
+	background-color: #ccc;
+	height: 1px;
+	margin: 0.3em 0;
+}
+
 .pure-menu-horizontal .pure-menu-separator {
+	width: 1px;
+	height: 1.3em;
+	margin: 0 0.3em;
+}
+
+.pure-menu-heading {
+	text-transform: uppercase;
+	color: #565d64;
+}
+
+.pure-menu-horizontal .pure-menu-separator,
+.pure-menu-horizontal .pure-menu-heading,
+.pure-menu-horizontal .pure-menu-item {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator {
+	background-color: #ccc;
+	height: 1px;
+	margin: 0.3em 0;
+	display: block;
+	width: auto;
 }
 
 .pure-menu-item .pure-menu-item {
@@ -976,6 +973,7 @@ a.pure-button-selected {
 	margin: 0;
 	padding: 0;
 	z-index: 3;
+	background-color: #fff;
 }
 
 .pure-menu-horizontal .pure-menu-children {
@@ -1020,49 +1018,12 @@ a.pure-button-selected {
 	padding: 0.5em 0;
 }
 
-.pure-menu-horizontal .pure-menu-children .pure-menu-separator,
-.pure-menu-separator {
-	background-color: #ccc;
-	height: 1px;
-	margin: 0.3em 0;
-}
-
-.pure-menu-horizontal .pure-menu-separator {
-	width: 1px;
-	height: 1.3em;
-	margin: 0 0.3em;
-}
-
-.pure-menu-horizontal .pure-menu-children .pure-menu-separator {
-	display: block;
-	width: auto;
-}
-
-.pure-menu-heading {
-	text-transform: uppercase;
-	color: #565d64;
-}
-
 .pure-menu-link {
 	color: #777;
 }
 
-.pure-menu-children {
-	background-color: #fff;
-}
-
-.pure-menu-heading,
-.pure-menu-link {
-	padding: 0.5em 1em;
-}
-
 .pure-menu-disabled {
 	opacity: 0.5;
-}
-
-.pure-menu-disabled .pure-menu-link:hover {
-	background-color: transparent;
-	cursor: default;
 }
 
 .pure-menu-active > .pure-menu-link,
@@ -1074,6 +1035,11 @@ a.pure-button-selected {
 .pure-menu-selected > .pure-menu-link,
 .pure-menu-selected > .pure-menu-link:visited {
 	color: #000;
+}
+
+.pure-menu-disabled .pure-menu-link:hover {
+	background-color: transparent;
+	cursor: default;
 }
 
 .pure-table {
@@ -1115,22 +1081,22 @@ a.pure-button-selected {
 	background-color: #f2f2f2;
 }
 
-.pure-table-striped tr:nth-child(2n-1) td {
-	background-color: #f2f2f2;
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+	border-width: 0 0 1px;
+	border-bottom: 1px solid #cbcbcb;
 }
 
 .pure-table-bordered td {
 	border-bottom: 1px solid #cbcbcb;
 }
 
-.pure-table-bordered tbody > tr:last-child > td {
-	border-bottom-width: 0;
+.pure-table-striped tr:nth-child(2n-1) td {
+	background-color: #f2f2f2;
 }
 
-.pure-table-horizontal td,
-.pure-table-horizontal th {
-	border-width: 0 0 1px;
-	border-bottom: 1px solid #cbcbcb;
+.pure-table-bordered tbody > tr:last-child > td {
+	border-bottom-width: 0;
 }
 
 .pure-table-horizontal tbody > tr:last-child > td {
