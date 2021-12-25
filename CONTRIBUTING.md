@@ -1,7 +1,6 @@
 # Contributing
 
-
-## 1. Install Visual Studio 
+## 1. Install Visual Studio
 
 [Windows instructions](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false)
 
@@ -9,31 +8,35 @@
 
 <br>
 
-## 2. Clone 
+## 2. Clone
 
 https
+
 ```
 git clone https://github.com/pcc-csc/ecommerce-site.git
 cd ecommerce-site
 ```
 
 ssh
+
 ```
 git clone git@github.com:pcc-csc/ecommerce-site.git
 cd ecommerce-site
 ```
+
 <br>
 
 ## 3. Install Node
 
 [Node instructions](https://nodejs.org/en/download/)
 
-or 
+or
 
 ```
 brew install node
 ```
-<br> 
+
+<br>
 
 ## 4. Install yarn
 
@@ -63,22 +66,22 @@ What am I agreeing to install?
 ```
 yarn install
 ```
+
 Dependancies are listed in `package.json`
 
 <br>
 
 ## 7. Run
+
 ```
 yarn start
 ```
+
 Scripts are listed in `package.json`
 
-<br>
---------
+## <br>
 
 ## Project uses:
+
 [EJS](https://ejs.co/)
 [Pure CSS](https://purecss.io/)
-
-
-
