@@ -57,7 +57,8 @@ What am I agreeing to install?
 - [Prettier Code Formatting](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-- Check the package.json file for a list of dependencies
+- Check the [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
+ file for a list of dependencies
 
 <br>
 
@@ -67,7 +68,7 @@ What am I agreeing to install?
 yarn install
 ```
 
-Dependancies are listed in `package.json`
+Dependancies are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
 
 <br>
 
@@ -77,14 +78,12 @@ Dependancies are listed in `package.json`
 yarn start
 ```
 
-Scripts are listed in `package.json`
+Scripts are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
 
 ## <br>
 
 ## Project uses:
 
 [EJS](https://ejs.co/)
-
 <br>
-
 [Pure CSS](https://purecss.io/)
