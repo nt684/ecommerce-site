@@ -84,4 +84,7 @@ Scripts are listed in `package.json`
 ## Project uses:
 
 [EJS](https://ejs.co/)
+
+<br>
+
 [Pure CSS](https://purecss.io/)
