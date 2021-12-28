@@ -58,7 +58,7 @@ What am I agreeing to install?
 - [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - Check the [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
- file for a list of dependencies
+  file for a list of dependencies
 
 <br>
 
