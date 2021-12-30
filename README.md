@@ -14,4 +14,4 @@ There are also some other nicities
 
 ## TODO
 
-- Add repository URLs to `package.json`, `CONTRIBUTING.md`
+- Add repository URLs to `CONTRIBUTING.md`
