@@ -4,7 +4,7 @@
 	"version": "0.1.0",
 	"description": "Ecommerce site",
 	"type": "module",
-	"packageManager": "pnpm@6.23.5+",
+	"packageManager": "yarn@1.22.17+",
 	"main": "src/index.js",
 	"scripts": {
 		"start": "node src/index.js",
@@ -18,14 +18,14 @@
 		"lintjs:fix": "eslint --fix .",
 		"typecheck": "tsc"
 	},
-	"homepage": "https://github.com/owner/project#README.md",
-	"license": "BSD-3-Clause",
+	"homepage": "https://github.com/pcc-csc/ecommerce-site#README.md",
+	"license": "SEE LICENSE IN ./licenses/Apache License.txt",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/project/repo"
+		"url": "https://github.com/pcc-csc/ecommerce-site"
 	},
 	"bugs": {
-		"url": "https://github.com/owner/repo/issues"
+		"url": "https://github.com/pcc-csc/ecommerce-site/issues"
 	},
 	"contributors": [
 		{
