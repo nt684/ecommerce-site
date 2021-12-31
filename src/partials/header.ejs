@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/public/css/header.css" />
+		<link rel="stylesheet" href="./public/css/global.css" />
+		<link rel="stylesheet" href="./public/css/header.css" />
+
 		<style>
 			@font-face {
 				font-family: 'Roboto';
@@ -14,6 +16,10 @@
 				font-family: 'Roboto-Light';
 				src: url('/public/fonts/Roboto-Light-webfont.woff') format('woff');
 			}
+			@font-face {
+				font-family: 'Roboto-Medium';
+				src: url('/public/fonts/Roboto-Medium-webfont.woff') format('woff');
+			}
 		</style>
 		<title>Baking Site ^w^</title>
 	</head>
@@ -22,9 +28,16 @@
 			<div class="hamburger-menu">
 				<%- include('../public/feather/menu.svg'); -%>
 			</div>
-			<h1>Local Bakery</h1>
+			<span id="top-app-bar__title">Local Bakery</span>
 			<div class="inner-flex">
-				<%- include('../public/feather/search.svg'); -%> <%-
-				include('../public/feather/user.svg'); -%>
+				<div id="search-icon">
+					<%- include('../public/feather/search.svg'); -%>
+				</div>
+				<div id="user-icon"><%- include('../public/feather/user.svg'); -%></div>
 			</div>
 		</header>
+		<body>
+			<main></main>
+		</body>
+	</body>
+</html>

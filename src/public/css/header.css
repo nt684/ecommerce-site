@@ -1,48 +1,29 @@
-*,
-*::before,
-*::after {
-	padding: 0;
-	margin: 0;
-	border: 0 none;
-	box-sizing: border-box;
-}
-
-html {
-	background-color: var(--green);
-}
-
-:root {
-	--black: #1c1b1e;
-	--white: #fff;
-	--purple: #4000a5;
-	--green: #e3ffe9;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Roboto-Light, ui-sans-serif, sans-serif;
-}
-
 header {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	padding: 10px;
-	color: var(--white);
+	padding: 10px 20px;
+	color: var(--text-on-purple);
 	background-color: var(--purple);
 }
 
-header > h1 {
-	font-size: 22px;
-	letter-spacing: 1px;
+#top-app-bar__title {
+	font-size: 24px;
+	letter-spacing: 0.2px;
+	line-height: 32px;
+	font-family: Roboto-Medium, ui-sans-serif, sans-serif;
+	font-weight: 500;
+}
+
+.hamburger-menu svg,
+#search-icon svg,
+#user-icon svg {
+	display: flex;
+	width: 24px;
+	height: 24px;
 }
 
 header > .hamburger-menu {
-	display: flex;
 	align-items: center;
 }
 

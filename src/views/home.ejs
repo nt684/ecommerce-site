@@ -6,21 +6,21 @@
 		background-color: var(--white);
 		display: flex;
 		align-items: center;
-		font-family: Roboto;
-		font-size: 16px;
-		padding-inline-start: 16px;
-		color: #404040;
+		padding-inline-start: 20px;
+		color: var(--text-on-white);
 	"
 >
-	<span>Location</span>
+	<span class="subtitle">Location</span>
 </div>
-<h1>Home</h1>
+<div class="main-content">
+	<h1>Home</h1>
 
-<a href="/templatetest">Click to see Mustache man!</a>
-
-<h2>Link to items</h2>
-<a href="/item/milk_shake">Milk Shake</a>
-<a href="/item/blueberry_muffin">Blueberry Muffin</a>
-<a href="/item/scone">Scone</a>
+	<h4>Link to items</h4>
+	<p>
+		<a href="./item/milk_shake">Milk Shake</a>
+		<a href="./item/blueberry_muffin">Blueberry Muffin</a>
+		<a href="./item/scone">Scone</a>
+	</p>
+</div>
 
 <%- include('../partials/footer.ejs'); -%>
