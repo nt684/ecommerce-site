@@ -7,8 +7,23 @@ header {
 	background-color: var(--purple);
 }
 
-header > .hamburger-menu {
+#top-app-bar__title {
+	font-size: 24px;
+	letter-spacing: 0.2px;
+	line-height: 32px;
+	font-family: Roboto-Medium, ui-sans-serif, sans-serif;
+	font-weight: 500;
+}
+
+.hamburger-menu svg,
+#search-icon svg,
+#user-icon svg {
 	display: flex;
+	width: 24px;
+	height: 24px;
+}
+
+header > .hamburger-menu {
 	align-items: center;
 }
 
@@ -22,11 +37,4 @@ header > .inner-flex {
 	margin-left: auto;
 	display: flex;
 	gap: 10px;
-}
-
-.hamburger-menu svg,
-#search-icon svg,
-#user-icon svg {
-	width: 24px;
-	height: 24px;
 }
