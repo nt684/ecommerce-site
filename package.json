@@ -19,7 +19,7 @@
 		"typecheck": "tsc"
 	},
 	"homepage": "https://github.com/pcc-csc/ecommerce-site#README.md",
-	"license": "BSD 3-Clause License",
+	"license": "BSD 3-Clause",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/pcc-csc/ecommerce-site"
