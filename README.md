@@ -11,7 +11,5 @@ There are also some other nicities
 - [ESLint](https://eslint.org)
 - [Stylelint](https://stylelint.io)
 - [TypeScript](https://www.typescriptlang.org)
-
-## TODO
-
-- Add repository URLs to `CONTRIBUTING.md`
+- [EJS](https://ejs.co/)
+- [Bulma](https://bulma.io/)

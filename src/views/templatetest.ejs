@@ -1,7 +1,6 @@
 <%- include('../partials/header.ejs'); -%>
-<div class="main-content">
+<div class="container">
 	<% if (user) { %>
-	<h2><%= user.name %></h2>
-	<% } %>
+	<h1 class="title is-1"><%= user.name %></h1>
 </div>
-<%- include('../partials/footer.ejs'); -%>
+<% } %> <%- include('../partials/footer.ejs'); -%>

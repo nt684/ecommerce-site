@@ -80,10 +80,4 @@ yarn start
 
 Scripts are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
 
-## <br>
 
-## Project uses:
-
-[EJS](https://ejs.co/)
-<br>
-[Pure CSS](https://purecss.io/)

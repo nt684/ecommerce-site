@@ -1,26 +1,29 @@
 <%- include('../partials/header.ejs'); -%>
 
-<div
-	style="
-		height: 40px;
-		background-color: var(--white);
-		display: flex;
-		align-items: center;
-		padding-inline-start: 20px;
-		color: var(--text-on-white);
-	"
->
-	<span class="subtitle">Location</span>
+<div class="level is-mobile">
+	<div class="level-item">
+		<p class="subtitle is-5">Location</p>
+	</div>
+	<div class="level-item">
+		<div class="tags are-medium">
+			<span class="tag">$</span>
+			<span class="tag">$$</span>
+			<span class="tag">$$$</span>
+		</div>
+	</div>
 </div>
-<div class="main-content">
-	<h1>Home</h1>
 
-	<h4>Link to items</h4>
-	<p>
-		<a href="./item/milk_shake">Milk Shake</a>
-		<a href="./item/blueberry_muffin">Blueberry Muffin</a>
-		<a href="./item/scone">Scone</a>
-	</p>
-</div>
+<section class="section">
+	<div class="container">
+		<h1 class="title is-1">Home</h1>
+		<p class="subtitle is-3">Link to items</p>
+		<p>
+			<a href="./item/milk_shake">Milk Shake</a>
+			<a href="./item/blueberry_muffin">Blueberry Muffin</a>
+			<a href="./item/scone">Scone</a>
+			<a href="./templatetest">Click to see Mustache man!</a>
+		</p>
+	</div>
+</section>
 
 <%- include('../partials/footer.ejs'); -%>
