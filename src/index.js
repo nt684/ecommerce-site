@@ -32,6 +32,10 @@ app.get('/cart', (req, res) => {
 	res.render('cart.ejs')
 })
 
+app.get('/checkout', (req, res) => {
+	res.render('checkout.ejs')
+})
+
 app.get('/templatetest', (req, res) => {
 	res.render('templatetest.ejs', {
 		user: {
