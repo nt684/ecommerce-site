@@ -79,5 +79,3 @@ yarn start
 ```
 
 Scripts are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
-
-
