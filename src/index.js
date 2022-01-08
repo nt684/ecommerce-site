@@ -28,6 +28,22 @@ app.get('/pastry/:pastry', (req, res) => {
 	})
 })
 
+app.get('/cakes', (req, res) => {
+	res.render('cakes.ejs')
+})
+
+app.get('/cookies', (req, res) => {
+	res.render('cookies.ejs')
+})
+
+app.get('/cupcakes', (req, res) => {
+	res.render('cupcakes.ejs')
+})
+
+app.get('/pies', (req, res) => {
+	res.render('pies.ejs')
+})
+
 app.get('/cart', (req, res) => {
 	res.render('cart.ejs')
 })
@@ -36,8 +52,16 @@ app.get('/checkout', (req, res) => {
 	res.render('checkout.ejs')
 })
 
-app.get('/templatetest', (req, res) => {
-	res.render('templatetest.ejs', {
+app.get('/login', (req, res) => {
+	res.render('login.ejs')
+})
+
+app.get('/order', (req, res) => {
+	res.render('order.ejs')
+})
+
+app.get('/user-profile', (req, res) => {
+	res.render('user_profile.ejs', {
 		user: {
 			name: 'Mustache Man',
 		},
