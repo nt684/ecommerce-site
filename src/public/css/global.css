@@ -1,11 +1,10 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
 
-/* TODO: Add colors */
 :root {
 	--black: #1c1b1e;
 	--white: #fffbfe;
 	--text-on-white: #1c1b1e;
-	--is-primary: #370095;
+	--is-primary: rgb(75 19 161);
 	--text-on-purple: #f0ecf8;
 	--green: #f2fff4;
 	--text-on-green: #00210f;

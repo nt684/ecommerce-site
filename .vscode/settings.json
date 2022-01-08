@@ -1,6 +1,6 @@
 {
 	/* general */
-	"editor.formatOnSave": true,
+	"formattingToggle.affects": ["editor.formatOnSave"],
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true,
 		"source.organizeImports": true
