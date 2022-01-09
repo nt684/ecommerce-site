@@ -1,25 +1,28 @@
 <!-- TODO: Add open search on click -->
 <!-- TODO: Add navigation bar on small screens -->
 
-<header>
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="container">
-			<div class="navbar-menu">
-				<div class="navbar-start">
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link"> Our Products </a>
+<!-- TODO: Turn cart into drawer that opens -->
 
-						<div class="navbar-dropdown">
-							<a class="navbar-item" href="/cupcakes"> Cupcakes </a>
-							<a class="navbar-item" href="cakes"> Cakes </a>
-							<a class="navbar-item" href="/pies"> Pies </a>
-							<a class="navbar-item" href="/cookies"> Cookies </a>
-						</div>
-					</div>
-					<a class="navbar-item" href="/order"> Order Now </a>
-				</div>
-			</div>
-			<div class="navbar-brand is-mobile">
+<header>
+	<nav
+		class="navbar has-shadow has-centered-logo"
+		role="navigation"
+		aria-label="main navigation"
+	>
+		<div class="container">
+			<div class="navbar-brand is-hidden-desktop">
+				<a
+					role="button"
+					aria-label="menu"
+					area-expanded="false"
+					data-target="navbarLocalBakery"
+					class="navbar-item"
+				>
+					<span class="icon menu-item">
+						<%- include('../public/feather/menu.svg'); -%>
+					</span>
+				</a>
+
 				<a class="navbar-item" href="/">
 					<img
 						src="../public/assets/your-local-bakery-logo.png"
@@ -28,20 +31,44 @@
 						alt="Local Bakery logo"
 					/>
 				</a>
-
 				<a
 					role="button"
-					class="navbar-burger"
-					aria-label="menu"
+					aria-label="cart"
 					aria-expanded="false"
-					data-target="navbarBasicExample"
+					href="/cart"
+					class="navbar-item"
 				>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
+					<%- include('../public/feather/shopping-cart.svg'); -%>
 				</a>
 			</div>
-			<div class="navbar-menu">
+
+			<div id="navbarLocalBakery" class="navbar-menu">
+				<div class="navbar-start">
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Our Products </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="/cupcakes"> Cupcakes </a>
+							<a class="navbar-item" href="cakes"> Cakes </a>
+							<a class="navbar-item" href="/pies"> Pies </a>
+							<a class="navbar-item" href="/cookies"> Cookies </a>
+						</div>
+					</div>
+
+					<a class="navbar-item" href="/order"> Order Now </a>
+				</div>
+
+				<div class="navbar-brand is-hidden-touch">
+					<a class="navbar-item" href="/">
+						<img
+							src="../public/assets/your-local-bakery-logo.png"
+							width="173px"
+							height="29px"
+							alt="Local Bakery logo"
+						/>
+					</a>
+				</div>
+
 				<div class="navbar-end">
 					<a class="navbar-item">
 						<span class="icon">
