@@ -2,9 +2,9 @@
 
 ## 1. Install Visual Studio
 
-[Windows instructions](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false)
+[Install Visual Studio on Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false)
 
-[Mac/Linux instructions](https://code.visualstudio.com/#alt-downloads)
+[Install VS Code on Mac/Linux](https://code.visualstudio.com/#alt-downloads)
 
 <br>
 
@@ -19,7 +19,7 @@ cd ecommerce-site
 
 ## 3. Install Node
 
-[Node instructions](https://nodejs.org/en/download/)
+[Install Node](https://nodejs.org/en/download/)
 
 or
 
@@ -31,7 +31,7 @@ brew install node
 
 ## 4. Install yarn
 
-[Yarn instructions](https://classic.yarnpkg.com/en/docs/install)
+[Install Yarn](https://classic.yarnpkg.com/en/docs/install)
 
 <br>
 
@@ -83,5 +83,5 @@ yarn lint
 
 ### Docs
 
-[Vue](https://vuejs.org/v2/guide/)
-[Bulma](https://bulma.io/documentation/)
+- [Vue](https://vuejs.org/v2/guide/)
+- [Bulma](https://bulma.io/documentation/)
