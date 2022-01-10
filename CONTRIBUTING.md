@@ -10,17 +10,8 @@
 
 ## 2. Clone
 
-https
-
 ```
 git clone https://github.com/pcc-csc/ecommerce-site.git
-cd ecommerce-site
-```
-
-ssh
-
-```
-git clone git@github.com:pcc-csc/ecommerce-site.git
 cd ecommerce-site
 ```
 
@@ -75,7 +66,22 @@ Dependancies are listed in [`package.json`](https://github.com/pcc-csc/ecommerce
 ## 7. Run
 
 ```
-yarn start
+yarn serve
 ```
 
 Scripts are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
+
+---
+
+## Dev help
+
+### Fix errors
+
+```
+yarn lint
+```
+
+### Docs
+
+[Vue](https://vuejs.org/v2/guide/)
+[Bulma](https://bulma.io/documentation/)

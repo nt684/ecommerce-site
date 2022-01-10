@@ -1,23 +1,8 @@
 {
 	"name": "ecommerce-site",
-	"private": true,
+	"description": "Local Bakery",
 	"version": "0.1.0",
-	"description": "Ecommerce site",
-	"type": "module",
-	"packageManager": "yarn@1.22.17+",
-	"main": "src/index.js",
-	"scripts": {
-		"start": "node src/index.js",
-		"format": "prettier --check \"**/*.{js,jsx,css,md,mdx,yaml,yml,toml}\"",
-		"format:fix": "prettier --write \"**/*.{js,jsx,css,md,mdx,yaml,yml,toml}\"",
-		"lint": "run-s -c lintcss lintjs",
-		"lint:fix": "run-s -c lintcss:fix lintjs:fix",
-		"lintcss": "stylelint \"**/*.css\"",
-		"lintcss:fix": "stylelint \"**/*.css\" --fix",
-		"lintjs": "eslint .",
-		"lintjs:fix": "eslint --fix .",
-		"typecheck": "tsc"
-	},
+	"private": true,
 	"homepage": "https://github.com/pcc-csc/ecommerce-site#README.md",
 	"license": "BSD 3-Clause",
 	"repository": {
@@ -42,29 +27,32 @@
 		"website",
 		"ecommerce"
 	],
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint",
+		"lintscss:fix": "stylelint ./src/**/*.{vue} --fix"
+	},
 	"dependencies": {
-		"dotenv": "^10.0.0",
-		"ejs": "^3.1.6",
-		"express": "^4.17.1",
-		"helmet": "^4.6.0",
-		"sass": "^1.46.0",
-		"typescript": "^4.5.2"
+		"core-js": "^3.6.5",
+		"vue": "^3.0.0"
 	},
 	"devDependencies": {
-		"@tsconfig/node16": "^1.0.2",
-		"@types/express": "^4.17.13",
-		"@types/node": "^16.11.11",
-		"eslint": "^8.3.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-import": "^2.25.3",
-		"eslint-plugin-prettier": "^4.0.0",
-		"npm-run-all": "^4.1.5",
-		"prettier": "^2.5.0",
-		"stylelint": "^14.1.0",
-		"stylelint-config-prettier": "^9.0.3",
-		"stylelint-config-recommended": "^6.0.0",
-		"stylelint-config-standard": "^24.0.0",
-		"stylelint-prettier": "^2.0.0"
+		"@vue/cli-plugin-babel": "~4.5.0",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"@vue/compiler-sfc": "^3.0.0",
+		"@vue/eslint-config-airbnb": "^5.0.2",
+		"@vue/eslint-config-prettier": "^6.0.0",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.7.2",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-vue": "^7.0.0",
+		"prettier": "^2.2.1",
+		"stylelint": "^14.2.0",
+		"stylelint-config-recommended-scss": "^5.0.2",
+		"stylelint-scss": "^4.1.0",
+		"stylelint-webpack-plugin": "^3.1.0"
 	}
 }

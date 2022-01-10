@@ -1,6 +1,6 @@
 {
 	/* general */
-	"formattingToggle.affects": ["editor.formatOnSave"],
+	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true,
 		"source.organizeImports": true
@@ -17,11 +17,17 @@
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
+	"[vue]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[vue-html]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 
 	/* stylelint */
 	"css.validate": false,
 	"stylelint.enable": true,
-	"[css]": {
+	"[scss]": {
 		"editor.defaultFormatter": "stylelint.vscode-stylelint"
 	}
 }
