@@ -28,4 +28,5 @@ jobs:
           prettier: true
           eslint: true
           stylelint: true
+          stylelint_args: "--allow-empty-input"
           auto_fix: true
