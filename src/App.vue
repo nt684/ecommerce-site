@@ -1,3 +1,4 @@
+// TODO: refactor double links
 <template>
 	<div id="nav">
 		<nav
@@ -20,7 +21,7 @@
 					</a>
 					<router-link to="/" class="navbar-item"
 						><img
-							src="./assets/logo.png"
+							src="../public/assets/logo.png"
 							style="width=173px; height=29px;"
 							alt="Local Bakery logo"
 					/></router-link>
@@ -50,9 +51,15 @@
 								<router-link to="/collections/cakes" class="navbar-item"
 									>Cakes</router-link
 								>
-								<a class="navbar-item"> Cupcakes </a>
-								<a class="navbar-item"> Pies </a>
-								<a class="navbar-item"> Cookies </a>
+								<router-link to="/collections/cupcakes" class="navbar-item"
+									>CupCakes</router-link
+								>
+								<router-link to="/collections/pies" class="navbar-item"
+									>Pies</router-link
+								>
+								<router-link to="/collections/cookies" class="navbar-item"
+									>Cookies</router-link
+								>
 							</div>
 						</div>
 						<router-link to="/collections" class="navbar-item"
@@ -63,7 +70,7 @@
 					<div class="navbar-brand is-hidden-touch">
 						<a class="navbar-item" href="/">
 							<img
-								src="./assets/logo.png"
+								src="../public/assets/logo.png"
 								alt="Local Bakery logo"
 								style="width=173px; height=29px;"
 							/>
@@ -114,5 +121,12 @@
 
 .navbar-brand {
 	justify-content: space-between;
+}
+
+.product__description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 </style>
