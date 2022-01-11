@@ -7,7 +7,7 @@
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint",
-		"lintscss:fix": "stylelint ./src/**/*.{vue} --fix"
+		"lintscss:fix": "stylelint ./src/**/*.{vue,scss} --fix"
 	},
 	"dependencies": {
 		"bulma": "^0.9.3",

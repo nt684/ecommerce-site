@@ -4,7 +4,7 @@ module.exports = {
 		node: true,
 	},
 	extends: [
-		'eslint:recommended',
+		// 'eslint:recommended',
 		'plugin:vue/vue3-essential',
 		'@vue/airbnb',
 		'@vue/prettier',
@@ -12,6 +12,7 @@ module.exports = {
 	parserOptions: {
 		parser: 'babel-eslint',
 	},
+	plugins: ['vue'],
 	rules: {
 		'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
