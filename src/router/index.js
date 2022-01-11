@@ -18,7 +18,16 @@ const routes = [
 			import(/* webpackChunkName: "about" */ '../views/CartPage.vue'),
 	},
 	{
-		path: '/products/:id',
+		path: '/collections',
+		name: 'CollectionsPage',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "about" */ '../views/CollectionsPage.vue'),
+	},
+	{
+		path: '/products/:link',
 		name: 'ProductDetailPage',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
@@ -27,13 +36,34 @@ const routes = [
 			import(/* webpackChunkName: "about" */ '../views/ProductDetailPage.vue'),
 	},
 	{
-		path: '/products',
-		name: 'ProductsPage',
+		path: '/collections/cakes',
+		name: 'CollectionsCakesPage',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/ProductsPage.vue'),
+			import(
+				/* webpackChunkName: "about" */ '../views/CollectionsCakesPage.vue'
+			),
+	},
+
+	{
+		path: '/login',
+		name: 'UserLoginPage',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "about" */ '../views/UserLoginPage.vue'),
+	},
+	{
+		path: '/account',
+		name: 'UserAccountPage',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "about" */ '../views/UserAccountPage.vue'),
 	},
 ]
 

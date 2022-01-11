@@ -1,5 +1,9 @@
 <template>
-	<h1>This is the products detail page</h1>
+	<div class="container">
+		<section class="section">
+			<h1 class="title is-1">Product Details Page</h1>
+		</section>
+	</div>
 </template>
 
 <script>
@@ -8,8 +12,4 @@ export default {
 }
 </script>
 
-<style scoped>
-h1 {
-	color: blue;
-}
-</style>
+<style scoped></style>
