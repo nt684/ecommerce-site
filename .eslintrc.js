@@ -3,7 +3,12 @@ module.exports = {
 	env: {
 		node: true,
 	},
-	extends: ['eslint:recommended', 'plugin:vue/vue3-essential', '@vue/airbnb', '@vue/prettier'],
+	extends: [
+		'eslint:recommended',
+		'plugin:vue/vue3-essential',
+		'@vue/airbnb',
+		'@vue/prettier',
+	],
 	parserOptions: {
 		parser: 'babel-eslint',
 	},

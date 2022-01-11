@@ -2,8 +2,7 @@
 	/* general */
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
-		"source.fixAll": true,
-		"source.organizeImports": true
+		"source.fixAll": true
 	},
 
 	/* prettier */
@@ -26,8 +25,5 @@
 
 	/* stylelint */
 	"css.validate": false,
-	"stylelint.enable": true,
-	"[scss]": {
-		"editor.defaultFormatter": "stylelint.vscode-stylelint"
-	}
+	"stylelint.enable": true
 }

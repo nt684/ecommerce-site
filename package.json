@@ -1,58 +1,60 @@
 {
-	"name": "ecommerce-site",
-	"description": "Local Bakery",
-	"version": "0.1.0",
-	"private": true,
-	"homepage": "https://github.com/pcc-csc/ecommerce-site#README.md",
-	"license": "BSD 3-Clause",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pcc-csc/ecommerce-site"
-	},
-	"bugs": {
-		"url": "https://github.com/pcc-csc/ecommerce-site/issues"
-	},
-	"contributors": [
-		{
-			"name": "Edwin Kofler",
-			"email": "edwin@kofler.dev",
-			"url": "https://edwinkofler.com"
-		},
-		{
-			"name": "Jacqueline Friedberg 🙂",
-			"url": "https://www.linkedin.com/in/jacqueline-friedberg/"
-		}
-	],
-	"keywords": [
-		"website",
-		"ecommerce"
-	],
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint",
-		"lintscss:fix": "stylelint ./src/**/*.{vue} --fix"
-	},
-	"dependencies": {
-		"core-js": "^3.6.5",
-		"vue": "^3.0.0"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "~4.5.0",
-		"@vue/cli-plugin-eslint": "~4.5.0",
-		"@vue/cli-service": "~4.5.0",
-		"@vue/compiler-sfc": "^3.0.0",
-		"@vue/eslint-config-airbnb": "^5.0.2",
-		"@vue/eslint-config-prettier": "^6.0.0",
-		"babel-eslint": "^10.1.0",
-		"eslint": "^6.7.2",
-		"eslint-plugin-import": "^2.20.2",
-		"eslint-plugin-prettier": "^3.3.1",
-		"eslint-plugin-vue": "^7.0.0",
-		"prettier": "^2.2.1",
-		"stylelint": "^14.2.0",
-		"stylelint-config-recommended-scss": "^5.0.2",
-		"stylelint-scss": "^4.1.0",
-		"stylelint-webpack-plugin": "^3.1.0"
-	}
+  "name": "ecommerce-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Bakery",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lintscss:fix": "stylelint ./src/**/*.{vue} --fix"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-scss": "^4.1.0",
+    "stylelint-webpack-plugin": "^3.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/pcc-csc/ecommerce-site/issues"
+  },
+  "contributors": [
+    {
+      "name": "Edwin Kofler",
+      "email": "edwin@kofler.dev",
+      "url": "https://edwinkofler.com"
+    },
+    {
+      "name": "Jacqueline Friedberg 🙂",
+      "url": "https://www.linkedin.com/in/jacqueline-friedberg/"
+    }
+  ],
+  "homepage": "https://github.com/pcc-csc/ecommerce-site#README.md",
+  "keywords": [
+    "website",
+    "ecommerce"
+  ],
+  "license": "BSD 3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcc-csc/ecommerce-site"
+  }
 }

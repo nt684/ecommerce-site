@@ -24,7 +24,7 @@ jobs:
       - name: Run linters
         uses: wearerequired/lint-action@v1
         with:
-          commit_message: "style: fix issues with ${linter}"
+          commit_message: 'style: fix issues with ${linter}'
           prettier: true
           eslint: true
           stylelint: true
