@@ -3,7 +3,6 @@ import Home from '../views/Home.vue'
 
 const routes = [
 	{
-		// usually the home
 		path: '/',
 		name: 'Home',
 		component: Home,
@@ -27,7 +26,7 @@ const routes = [
 			import(/* webpackChunkName: "about" */ '../views/Collections.vue'),
 	},
 	{
-		path: '/products/:link',
+		path: '/products/:productLink',
 		name: 'ProductDetail',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
@@ -36,42 +35,13 @@ const routes = [
 			import(/* webpackChunkName: "about" */ '../views/ProductDetail.vue'),
 	},
 	{
-		path: '/collections/cakes',
-		name: 'CollectionsCakes',
+		path: '/collections/:typeLink',
+		name: 'Product',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/CollectionsCakes.vue'),
-	},
-	{
-		path: '/collections/cupcakes',
-		name: 'CollectionsCupcakes',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(
-				/* webpackChunkName: "about" */ '../views/CollectionsCupcakes.vue'
-			),
-	},
-	{
-		path: '/collections/pies',
-		name: 'CollectionsPies',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/CollectionsPies.vue'),
-	},
-	{
-		path: '/collections/cookies',
-		name: 'CollectionsCookies',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/CollectionsCookies.vue'),
+			import(/* webpackChunkName: "about" */ '../views/Product.vue'),
 	},
 	{
 		path: '/login',

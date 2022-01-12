@@ -21,7 +21,7 @@
 					</a>
 					<router-link to="/" class="navbar-item"
 						><img
-							src="../public/assets/logo.png"
+							src="../public/logo.png"
 							style="width=173px; height=29px;"
 							alt="Local Bakery logo"
 					/></router-link>
@@ -48,16 +48,28 @@
 							>
 
 							<div class="navbar-dropdown">
-								<router-link to="/collections/cakes" class="navbar-item"
+								<router-link
+									@click="update"
+									to="/collections/cakes"
+									class="navbar-item"
 									>Cakes</router-link
 								>
-								<router-link to="/collections/cupcakes" class="navbar-item"
+								<router-link
+									@click="update"
+									to="/collections/cupcakes"
+									class="navbar-item"
 									>CupCakes</router-link
 								>
-								<router-link to="/collections/pies" class="navbar-item"
+								<router-link
+									@click="update"
+									to="/collections/pies"
+									class="navbar-item"
 									>Pies</router-link
 								>
-								<router-link to="/collections/cookies" class="navbar-item"
+								<router-link
+									@click="update"
+									to="/collections/cookies"
+									class="navbar-item"
 									>Cookies</router-link
 								>
 							</div>
@@ -70,7 +82,7 @@
 					<div class="navbar-brand is-hidden-touch">
 						<a class="navbar-item" href="/">
 							<img
-								src="../public/assets/logo.png"
+								src="../public/logo.png"
 								alt="Local Bakery logo"
 								style="width=173px; height=29px;"
 							/>
@@ -114,6 +126,16 @@
 	</div>
 	<router-view />
 </template>
+
+<script>
+export default {
+	methods: {
+		update() {
+			this.$forceUpdate()
+		},
+	},
+}
+</script>
 
 <style lang="scss">
 @charset "utf-8";
