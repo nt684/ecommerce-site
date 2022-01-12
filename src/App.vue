@@ -48,28 +48,16 @@
 							>
 
 							<div class="navbar-dropdown">
-								<router-link
-									@click="update"
-									to="/collections/cakes"
-									class="navbar-item"
+								<router-link to="/collections/cakes" class="navbar-item"
 									>Cakes</router-link
 								>
-								<router-link
-									@click="update"
-									to="/collections/cupcakes"
-									class="navbar-item"
+								<router-link to="/collections/cupcakes" class="navbar-item"
 									>CupCakes</router-link
 								>
-								<router-link
-									@click="update"
-									to="/collections/pies"
-									class="navbar-item"
+								<router-link to="/collections/pies" class="navbar-item"
 									>Pies</router-link
 								>
-								<router-link
-									@click="update"
-									to="/collections/cookies"
-									class="navbar-item"
+								<router-link to="/collections/cookies" class="navbar-item"
 									>Cookies</router-link
 								>
 							</div>
@@ -126,16 +114,6 @@
 	</div>
 	<router-view />
 </template>
-
-<script>
-export default {
-	methods: {
-		update() {
-			this.$forceUpdate()
-		},
-	},
-}
-</script>
 
 <style lang="scss">
 @charset "utf-8";

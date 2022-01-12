@@ -15,21 +15,22 @@ import piesImage3 from './assets/pies-3.jpg'
 export const products = [
 	{
 		id: '6',
-		typeLink: 'cakes',
+		collectionLink: 'cakes',
 		collection: 'Cakes',
-		productLink: 'strawberry-dreams',
-		title: 'Strawberry Dreams',
+		productLink: 'strawberry-dreams-cake',
+		title: 'Strawberry Dreams Cake',
 		price: '60.00',
+		size: '3 layer',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
 		imageUrl: cakeImage5,
 	},
 	{
 		id: '3',
-		typeLink: 'cakes',
+		collectionLink: 'cakes',
 		collection: 'Cakes',
-		productLink: 'piece-of-heaven',
-		title: 'Piece of Heaven',
+		productLink: 'piece-of-heaven-cake',
+		title: 'Piece of Heaven Cake',
 		price: '20.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -37,10 +38,10 @@ export const products = [
 	},
 	{
 		id: 1,
-		typeLink: 'cakes',
+		collectionLink: 'cakes',
 		collection: 'Cakes',
-		productLink: 'cookie-monster',
-		title: 'Cookie Monster',
+		productLink: 'cookie-monster-cake',
+		title: 'Cookie Monster Cake',
 		price: '60.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -48,10 +49,10 @@ export const products = [
 	},
 	{
 		id: '13',
-		typeLink: 'cookies',
+		collectionLink: 'cookies',
 		collection: 'Cookies',
-		productLink: 'fudgesicle',
-		title: 'Fudgesicle',
+		productLink: 'fudgesicle-cookies',
+		title: 'Fudgesicle Cookie',
 		price: '35.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -59,10 +60,10 @@ export const products = [
 	},
 	{
 		id: 8,
-		typeLink: 'cookies',
+		collectionLink: 'cookies',
 		collection: 'Cookies',
-		productLink: 'sweet-macarons',
-		title: 'Sweet Macarons',
+		productLink: 'sweet-macarons-cookies',
+		title: 'Sweet Macarons Cookies',
 		price: '35.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -70,10 +71,10 @@ export const products = [
 	},
 	{
 		id: '9',
-		typeLink: 'cookies',
+		collectionLink: 'cookies',
 		collection: 'Cookies',
-		productLink: 'snickerdoodles',
-		title: 'Snickerdoodles',
+		productLink: 'snickerdoodle-cookies',
+		title: 'Snickerdoodle Cookies',
 		price: '35.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -81,10 +82,10 @@ export const products = [
 	},
 	{
 		id: '11',
-		typeLink: 'cookies',
+		collectionLink: 'cookies',
 		collection: 'Cookies',
 		productLink: 'chocolate-chip-cookies',
-		title: 'Chocolate Chip',
+		title: 'Chocolate Chip Cookies',
 		price: '25.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -92,9 +93,9 @@ export const products = [
 	},
 	{
 		id: '19',
-		typeLink: 'cupcakes',
+		collectionLink: 'cupcakes',
 		collection: 'Cupcakes',
-		productLink: 'blackberry-burst',
+		productLink: 'blackberry-burst-cupcakes',
 		title: 'Blackberry Burst',
 		price: '30.00',
 		description:
@@ -103,9 +104,9 @@ export const products = [
 	},
 	{
 		id: '17',
-		typeLink: 'cupcakes',
+		collectionLink: 'cupcakes',
 		collection: 'Cupcakes',
-		productLink: 'german-chocolate',
+		productLink: 'german-chocolate-cupcakes',
 		title: 'German Chocolate',
 		price: '30.00',
 		description:
@@ -114,10 +115,10 @@ export const products = [
 	},
 	{
 		id: '16',
-		typeLink: 'cupcakes',
+		collectionLink: 'cupcakes',
 		collection: 'Cupcakes',
-		productLink: 'strawberry-cream',
-		title: 'Strawberry Cream',
+		productLink: 'strawberry-cream-cupcakes',
+		title: 'Strawberry Cream Cupcakes',
 		price: '30.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -126,10 +127,10 @@ export const products = [
 
 	{
 		id: '24',
-		typeLink: 'pies',
+		collectionLink: 'pies',
 		collection: 'Pies',
-		productLink: 'Apple-carmel',
-		title: 'Apple Carmel',
+		productLink: 'Apple-carmel-pie',
+		title: 'Apple Carmel Pie',
 		price: '60.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -137,9 +138,9 @@ export const products = [
 	},
 	{
 		id: '26',
-		typeLink: 'pies',
+		collectionLink: 'pies',
 		collection: 'Pies',
-		productLink: 'grannies-mint',
+		productLink: 'grannies-mint-pie',
 		title: "Granny's Apple Mint",
 		price: '60.00',
 		description:
@@ -148,7 +149,7 @@ export const products = [
 	},
 	{
 		id: '25',
-		typeLink: 'pies',
+		collectionLink: 'pies',
 		collection: 'Pies',
 		productLink: 'cherry-pie',
 		title: 'Cherry Pie',

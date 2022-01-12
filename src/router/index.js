@@ -14,7 +14,7 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/ShoppingCart.vue'),
+			import(/* webpackChunkName: "cart" */ '../views/ShoppingCart.vue'),
 	},
 	{
 		path: '/collections',
@@ -23,7 +23,7 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/Collections.vue'),
+			import(/* webpackChunkName: "collections" */ '../views/Collections.vue'),
 	},
 	{
 		path: '/products/:productLink',
@@ -32,16 +32,18 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/ProductDetail.vue'),
+			import(
+				/* webpackChunkName: ":productLink" */ '../views/ProductDetail.vue'
+			),
 	},
 	{
-		path: '/collections/:typeLink',
+		path: '/collections/:collectionLink',
 		name: 'Product',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/Product.vue'),
+			import(/* webpackChunkName: ":collectionLink" */ '../views/Product.vue'),
 	},
 	{
 		path: '/login',
@@ -50,7 +52,7 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/UserLogin.vue'),
+			import(/* webpackChunkName: "login" */ '../views/UserLogin.vue'),
 	},
 	{
 		path: '/account',
@@ -59,7 +61,7 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/UserAccount.vue'),
+			import(/* webpackChunkName: "account" */ '../views/UserAccount.vue'),
 	},
 ]
 

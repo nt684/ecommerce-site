@@ -1,27 +1,28 @@
+// TODO: Fix refresh error
 <template>
 	<div class="container">
 		<section class="section">
-			<h1 class="title is-1">{{ oneProduct.collection }}</h1>
+			<h1 class="title is-1">{{ collectionOfProducts[0].collection }}</h1>
 			<div class="columns">
-				<div v-for="item in categoryOfProducts" :key="item.id" class="column">
+				<div v-for="product in collectionOfProducts" :key="product.id">
 					<div class="column">
-						<router-link :to="'/products/' + item.productLink">
+						<router-link :to="'/products/' + product.productLink">
 							<div class="card">
 								<div class="card-image">
 									<figure class="image is-4by3">
-										<img :src="item.imageUrl" :alt="item.title" />
+										<img :src="product.imageUrl" :alt="product.title" />
 									</figure>
 								</div>
 								<div class="card">
 									<div class="card-content">
 										<div class="content">
 											<h3 class="subtitle is-5">
-												{{ item.title }}
+												{{ product.title }}
 											</h3>
-											<p class="product__description">
-												{{ item.description }}
+											<p class="product-description">
+												{{ product.description }}
 											</p>
-											<p>Starting at ${{ item.price }}</p>
+											<p>Starting at ${{ product.price }}</p>
 										</div>
 									</div>
 								</div>
@@ -35,19 +36,25 @@
 </template>
 
 <script>
-import { products } from '../test-data'
+import { products } from '../product-data'
 
 export default {
 	name: 'ProductPage',
 	data() {
 		return {
-			categoryOfProducts: products.filter(
-				(p) => p.typeLink === this.$route.params.typeLink
-			),
-			oneProduct: products.find(
-				(p) => p.typeLink === this.$route.params.typeLink
+			collectionOfProducts: products.filter(
+				(p) => p.collectionLink === this.$route.params.collectionLink
 			),
 		}
 	},
 }
 </script>
+
+<style scoped>
+.product-description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+</style>
