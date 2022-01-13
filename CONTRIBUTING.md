@@ -2,25 +2,16 @@
 
 ## 1. Install Visual Studio
 
-[Windows instructions](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false)
+[Install Visual Studio on Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false)
 
-[Mac/Linux instructions](https://code.visualstudio.com/#alt-downloads)
+[Install VS Code on Mac/Linux](https://code.visualstudio.com/#alt-downloads)
 
 <br>
 
 ## 2. Clone
 
-https
-
 ```
 git clone https://github.com/pcc-csc/ecommerce-site.git
-cd ecommerce-site
-```
-
-ssh
-
-```
-git clone git@github.com:pcc-csc/ecommerce-site.git
 cd ecommerce-site
 ```
 
@@ -28,7 +19,7 @@ cd ecommerce-site
 
 ## 3. Install Node
 
-[Node instructions](https://nodejs.org/en/download/)
+[Install Node](https://nodejs.org/en/download/)
 
 or
 
@@ -40,7 +31,7 @@ brew install node
 
 ## 4. Install yarn
 
-[Yarn instructions](https://classic.yarnpkg.com/en/docs/install)
+[Install Yarn](https://classic.yarnpkg.com/en/docs/install)
 
 <br>
 
@@ -75,7 +66,22 @@ Dependancies are listed in [`package.json`](https://github.com/pcc-csc/ecommerce
 ## 7. Run
 
 ```
-yarn start
+yarn serve
 ```
 
 Scripts are listed in [`package.json`](https://github.com/pcc-csc/ecommerce-site/blob/main/package.json)
+
+---
+
+## Dev help
+
+### Fix errors
+
+```
+yarn lint
+```
+
+### Docs
+
+- [Vue](https://vuejs.org/v2/guide/)
+- [Bulma](https://bulma.io/documentation/)
