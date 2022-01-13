@@ -15,8 +15,8 @@
 						<img
 							:src="product.imageUrl"
 							:alt="product.title"
-							width="250px"
-							height="200px"
+							width="500px"
+							height="400px"
 						/>
 					</figure>
 				</div>
@@ -103,17 +103,18 @@ import { products } from '../product-data'
 
 export default {
 	name: 'ProductDetail',
-	data() {
-		return {
-			product: products.find(
+
+	computed: {
+		product() {
+			return products.find(
 				(p) => p.productLink === this.$route.params.productLink
-			),
-		}
+			)
+		},
 	},
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 input {
 	width: 3em;
 	text-align: center;

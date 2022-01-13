@@ -13,8 +13,8 @@
 										<img
 											:src="product.imageUrl"
 											:alt="product.title"
-											width="250px"
-											height="200px"
+											width="500px"
+											height="400px"
 										/>
 									</figure>
 								</div>

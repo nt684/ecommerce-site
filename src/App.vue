@@ -7,7 +7,7 @@
 			aria-label="main navigation"
 		>
 			<div class="container">
-				<div class="navbar-brand is-hidden-desktop">
+				<div class="navbar-brand">
 					<a
 						role="button"
 						aria-label="menu"
@@ -15,7 +15,7 @@
 						data-target="navbarLocalBakery"
 						class="navbar-item"
 					>
-						<span class="icon menu-item">
+						<span class="icon menu-item is-hidden-desktop">
 							<img src="./icons-feather/menu.svg" alt="Menu" />
 						</span>
 					</a>
@@ -31,7 +31,7 @@
 						role="button"
 						aria-label="cart"
 						aria-expanded="false"
-						class="navbar-item"
+						class="navbar-item is-hidden-desktop"
 						><span class="icon">
 							<img
 								src="./icons-feather/shopping-cart.svg"
@@ -41,7 +41,9 @@
 				</div>
 
 				<div id="navbarLocalBakery" class="navbar-menu">
-					<div class="navbar-start">
+					<div class="navbar-start"></div>
+
+					<div class="navbar-end">
 						<div class="navbar-item has-dropdown is-hoverable">
 							<router-link to="/collections" class="navbar-link"
 								>Our Products</router-link
@@ -62,28 +64,7 @@
 								>
 							</div>
 						</div>
-						<router-link to="/collections" class="navbar-item"
-							>Order Now</router-link
-						>
-					</div>
-
-					<div class="navbar-brand is-hidden-touch">
-						<a class="navbar-item" href="/">
-							<img
-								src="../public/logo.png"
-								alt="Local Bakery logo"
-								style="width=173px; height=29px;"
-							/>
-						</a>
-					</div>
-
-					<div class="navbar-end">
-						<a class="navbar-item">
-							<span class="icon">
-								<img src="./icons-feather/search.svg" alt="Search Site" />
-							</span>
-						</a>
-
+						<div class="navbar-item"></div>
 						<router-link
 							to="/login"
 							role="button"

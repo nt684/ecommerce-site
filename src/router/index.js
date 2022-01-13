@@ -1,12 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
-	{
-		path: '/',
-		name: 'Home',
-		component: Home,
-	},
 	{
 		path: '/cart',
 		name: 'ShoppingCart',
@@ -26,6 +20,15 @@ const routes = [
 			import(/* webpackChunkName: "collections" */ '../views/Collections.vue'),
 	},
 	{
+		path: '/collections/:collectionLink',
+		name: 'Product',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: ":collectionLink" */ '../views/Product.vue'),
+	},
+	{
 		path: '/products/:productLink',
 		name: 'ProductDetail',
 		// route level code-splitting
@@ -35,15 +38,6 @@ const routes = [
 			import(
 				/* webpackChunkName: ":productLink" */ '../views/ProductDetail.vue'
 			),
-	},
-	{
-		path: '/collections/:collectionLink',
-		name: 'Product',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: ":collectionLink" */ '../views/Product.vue'),
 	},
 	{
 		path: '/login',
@@ -62,6 +56,10 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(/* webpackChunkName: "account" */ '../views/UserAccount.vue'),
+	},
+	{
+		path: '/',
+		redirect: '/collections',
 	},
 ]
 
