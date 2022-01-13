@@ -1,4 +1,4 @@
-// TODO: Fix refresh error
+// TODO: Replace images with better ones
 <template>
 	<div class="container">
 		<section class="section">
@@ -9,8 +9,13 @@
 						<router-link :to="'/products/' + product.productLink">
 							<div class="card">
 								<div class="card-image">
-									<figure class="image is-4by3">
-										<img :src="product.imageUrl" :alt="product.title" />
+									<figure class="image">
+										<img
+											:src="product.imageUrl"
+											:alt="product.title"
+											width="250px"
+											height="200px"
+										/>
 									</figure>
 								</div>
 								<div class="card">
@@ -40,12 +45,13 @@ import { products } from '../product-data'
 
 export default {
 	name: 'ProductPage',
-	data() {
-		return {
-			collectionOfProducts: products.filter(
+
+	computed: {
+		collectionOfProducts() {
+			return products.filter(
 				(p) => p.collectionLink === this.$route.params.collectionLink
-			),
-		}
+			)
+		},
 	},
 }
 </script>

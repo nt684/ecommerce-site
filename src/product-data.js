@@ -14,13 +14,23 @@ import piesImage3 from './assets/pies-3.jpg'
 
 export const products = [
 	{
+		id: 1,
+		collectionLink: 'cakes',
+		collection: 'Cakes',
+		productLink: 'cookie-monster-cake',
+		title: 'Cookie Monster Cake',
+		price: '60.00',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
+		imageUrl: cakeImage1,
+	},
+	{
 		id: '6',
 		collectionLink: 'cakes',
 		collection: 'Cakes',
-		productLink: 'strawberry-dreams-cake',
-		title: 'Strawberry Dreams Cake',
+		productLink: 'napoleon-cake',
+		title: 'Napoleon Cake',
 		price: '60.00',
-		size: '3 layer',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
 		imageUrl: cakeImage5,
@@ -37,22 +47,11 @@ export const products = [
 		imageUrl: cakeImage3,
 	},
 	{
-		id: 1,
-		collectionLink: 'cakes',
-		collection: 'Cakes',
-		productLink: 'cookie-monster-cake',
-		title: 'Cookie Monster Cake',
-		price: '60.00',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
-		imageUrl: cakeImage1,
-	},
-	{
 		id: '13',
 		collectionLink: 'cookies',
 		collection: 'Cookies',
 		productLink: 'fudgesicle-cookies',
-		title: 'Fudgesicle Cookie',
+		title: 'Fudgesicle Cookies',
 		price: '35.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -95,8 +94,8 @@ export const products = [
 		id: '19',
 		collectionLink: 'cupcakes',
 		collection: 'Cupcakes',
-		productLink: 'blackberry-burst-cupcakes',
-		title: 'Blackberry Burst',
+		productLink: 'berry-burst-cupcakes',
+		title: 'Berry Burst Cupcakes',
 		price: '30.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -107,7 +106,7 @@ export const products = [
 		collectionLink: 'cupcakes',
 		collection: 'Cupcakes',
 		productLink: 'german-chocolate-cupcakes',
-		title: 'German Chocolate',
+		title: 'German Chocolate Cupcakes',
 		price: '30.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
@@ -140,8 +139,8 @@ export const products = [
 		id: '26',
 		collectionLink: 'pies',
 		collection: 'Pies',
-		productLink: 'grannies-mint-pie',
-		title: "Granny's Apple Mint",
+		productLink: 'grannys-apple-pie',
+		title: "Granny's Apple Pie",
 		price: '60.00',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',

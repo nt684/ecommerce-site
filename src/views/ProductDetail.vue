@@ -1,5 +1,4 @@
 // TODO: Add breadcrumb navigation (add links)
-
 <template>
 	<div class="container">
 		<section class="section">
@@ -13,10 +12,15 @@
 			<div class="columns is-tablet">
 				<div class="column">
 					<figure class="image">
-						<img :src="product.imageUrl" :alt="product.title" />
+						<img
+							:src="product.imageUrl"
+							:alt="product.title"
+							width="250px"
+							height="200px"
+						/>
 					</figure>
 				</div>
-				<div class="column is-two-fifths">
+				<div class="column">
 					<div class="block block-content">
 						<div class="content">
 							<h3 class="title is-1">
@@ -124,5 +128,9 @@ input {
 
 .block-content {
 	padding-bottom: 3em;
+}
+
+img {
+	border-radius: 0.25rem;
 }
 </style>
