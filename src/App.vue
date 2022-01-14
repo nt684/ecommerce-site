@@ -1,98 +1,60 @@
-// TODO: refactor double links
 <template>
-	<div id="nav">
-		<nav
-			class="navbar has-shadow has-centered-logo"
-			role="navigation"
-			aria-label="main navigation"
-		>
-			<div class="container">
-				<div class="navbar-brand">
-					<a
-						role="button"
-						aria-label="menu"
-						area-expanded="false"
-						data-target="navbarLocalBakery"
-						class="navbar-item"
-					>
-						<span class="icon menu-item is-hidden-desktop">
-							<img src="./icons-feather/menu.svg" alt="Menu" />
-						</span>
-					</a>
-					<router-link to="/" class="navbar-item"
-						><img
-							src="../public/logo.png"
-							style="width=173px; height=29px;"
-							alt="Local Bakery logo"
-					/></router-link>
+	<nav
+		class="navbar has-shadow is-fixed-top"
+		role="navigation"
+		aria-label="main navigation"
+	>
+		<div class="navbar-brand">
+			<router-link to="/" class="navbar-item">
+				<p class="is-size-4">Local Bakery</p>
+			</router-link>
 
-					<router-link
-						to="/cart"
-						role="button"
-						aria-label="cart"
-						aria-expanded="false"
-						class="navbar-item is-hidden-desktop"
-						><span class="icon">
-							<img
-								src="./icons-feather/shopping-cart.svg"
-								alt="Shopping Cart"
-							/> </span
-					></router-link>
-				</div>
-
-				<div id="navbarLocalBakery" class="navbar-menu">
-					<div class="navbar-start"></div>
-
-					<div class="navbar-end">
-						<div class="navbar-item has-dropdown is-hoverable">
-							<router-link to="/collections" class="navbar-link"
-								>Our Products</router-link
-							>
-
-							<div class="navbar-dropdown">
-								<router-link to="/collections/cakes" class="navbar-item"
-									>Cakes</router-link
-								>
-								<router-link to="/collections/cupcakes" class="navbar-item"
-									>CupCakes</router-link
-								>
-								<router-link to="/collections/pies" class="navbar-item"
-									>Pies</router-link
-								>
-								<router-link to="/collections/cookies" class="navbar-item"
-									>Cookies</router-link
-								>
-							</div>
-						</div>
-						<div class="navbar-item"></div>
-						<router-link
-							to="/login"
-							role="button"
-							aria-label="Login Page"
-							aria-expanded="false"
-							class="navbar-item"
-						>
-							<span class="icon">
-								<img src="./icons-feather/user.svg" alt="Login Page" />
-							</span>
-						</router-link>
-						<router-link
-							to="/cart"
-							role="button"
-							aria-label="Shopping Cart"
-							aria-expanded="false"
-							class="navbar-item"
-							><span class="icon">
-								<img
-									src="./icons-feather/shopping-cart.svg"
-									alt="Shopping Cart"
-								/> </span
-						></router-link>
-					</div>
-				</div>
+			<div class="is-hidden-desktop">
+				<a class="icon-text navbar-item">
+					<span class="icon">
+						<i class="material-icons"> account_circle </i>
+					</span>
+					<span>Sign in</span>
+				</a>
+				<a class="icon-text navbar-item">
+					<span class="icon">
+						<i class="material-icons">
+							<i class="material-icons"> shopping_cart </i>
+						</i>
+					</span>
+					<span>Cart</span>
+				</a>
 			</div>
-		</nav>
-	</div>
+		</div>
+
+		<div id="navbarLocalBakery" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item" href="/products/#cakes"> Cakes </a>
+				<a class="navbar-item" href="/products/#cookies"> Cookies </a>
+				<a class="navbar-item" href="/products/#cupcakes"> Cupcakes </a>
+				<a class="navbar-item" href="/products/#pies"> Pies </a>
+			</div>
+
+			<div class="navbar-end">
+				<router-link to="/account" class="navbar-item icon-text">
+					<span class="icon">
+						<i class="material-icons"> account_circle </i>
+					</span>
+					<span>Sign in</span>
+				</router-link>
+
+				<router-link to="/cart" class="navbar-item icon-text">
+					<span class="icon">
+						<i class="material-icons">
+							<i class="material-icons"> shopping_cart </i>
+						</i>
+					</span>
+					<span>Cart</span>
+				</router-link>
+			</div>
+		</div>
+	</nav>
+
 	<router-view />
 </template>
 
@@ -109,5 +71,9 @@
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+}
+
+.container {
+	padding-top: 3em;
 }
 </style>

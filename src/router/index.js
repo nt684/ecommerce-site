@@ -20,22 +20,13 @@ const routes = [
 			import(/* webpackChunkName: "Checkout" */ '../views/Checkout.vue'),
 	},
 	{
-		path: '/collections',
-		name: 'Collections',
+		path: '/products',
+		name: 'Products',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "collections" */ '../views/Collections.vue'),
-	},
-	{
-		path: '/collections/:collectionLink',
-		name: 'Product',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: ":collectionLink" */ '../views/Product.vue'),
+			import(/* webpackChunkName: ":collectionLink" */ '../views/Products.vue'),
 	},
 	{
 		path: '/products/:productLink',
@@ -68,7 +59,7 @@ const routes = [
 	},
 	{
 		path: '/',
-		redirect: '/collections',
+		redirect: '/products',
 	},
 ]
 
