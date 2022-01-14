@@ -3,8 +3,8 @@
 		<section class="section">
 			<div class="columns is-centered">
 				<div class="column is-half">
-					<h1 class="title is-1">Login</h1>
-					<form class="box login-box">
+					<h1 class="title is-1">Sign in</h1>
+					<form class="box">
 						<div class="field">
 							<label class="label">Email</label>
 							<div class="control">
@@ -23,18 +23,21 @@
 							</div>
 						</div>
 
-						<button class="button is-primary is-fullwidth">Sign in</button>
-						<nav class="level is-mobile">
-							<div class="level-left">
-								<router-link to="/forgotpassword" class="navbar-item icon-text">
+						<button class="button is-primary is-fullwidth is-uppercase">
+							Sign in
+						</button>
+						<div class="field is-grouped">
+							<p class="control">
+								<router-link to="#" class="navbar-item icon-text">
 									Forgot password
 								</router-link>
-
-								<router-link to="/forgotpassword" class="navbar-item icon-text">
+							</p>
+							<p class="control">
+								<router-link to="#" class="navbar-item icon-text">
 									Create Account
 								</router-link>
-							</div>
-						</nav>
+							</p>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -44,7 +47,7 @@
 
 <script>
 export default {
-	name: 'UserLogin',
+	name: 'UserSignIn',
 }
 </script>
 

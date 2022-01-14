@@ -1,10 +1,14 @@
 <template>
-	<!-- TODO: Make cycle through each category instead of repeating or make a component for the sections  -->
+	<!-- TODO: Make code cycle through each category instead of repeating or make a component for the sections  -->
+	<!-- TODO: Make cards smaller and scroll when more cards are added w/ arrow icon on right/left -->
+	<!-- TODO: Make create profile page -->
+	<!-- TODO: Add forgot password page -->
+
 	<div class="container">
 		<!-- Cakes -->
 		<section class="section" id="cakes">
 			<h1 class="title is-1">Cakes</h1>
-			<div class="columns">
+			<div class="columns is-mobile">
 				<div v-for="product in products[0].Cakes" :key="product.id">
 					<div class="column">
 						<router-link :to="'/products/' + product.productLink">
@@ -42,7 +46,7 @@
 		<!-- Cookies -->
 		<section class="section" id="cookies">
 			<h1 class="title is-1">Cookies</h1>
-			<div class="columns">
+			<div class="columns columns is-mobile">
 				<div v-for="product in products[1].Cookies" :key="product.id">
 					<div class="column">
 						<router-link :to="'/products/' + product.productLink">
@@ -80,7 +84,7 @@
 		<!-- Cupcakes -->
 		<section class="section" id="cupcakes">
 			<h1 class="title is-1">Cupcakes</h1>
-			<div class="columns">
+			<div class="columns columns is-mobile">
 				<div v-for="product in products[2].Cupcakes" :key="product.id">
 					<div class="column">
 						<router-link :to="'/products/' + product.productLink">
@@ -118,7 +122,7 @@
 		<!-- Pies -->
 		<section class="section" id="pies">
 			<h1 class="title is-1">Pies</h1>
-			<div class="columns">
+			<div class="columns columns is-mobile">
 				<div v-for="product in products[3].Pies" :key="product.id">
 					<div class="column">
 						<router-link :to="'/products/' + product.productLink">

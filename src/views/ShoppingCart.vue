@@ -1,12 +1,13 @@
 <template>
-	<!-- Fix Total price javascript -->
+	<!-- TODO: Fix Total price javascript -->
+	<!-- TODO: Make it possible to delete cart items -->
 	<div class="container">
 		<section class="section">
-			<h1 class="title is-1">My Cart</h1>
-			<table class="table is-striped">
-				<tbody>
-					<tr>
-						<div v-for="product in cartItems" :key="product.id">
+			<div class="columns is-centered">
+				<div class="column is-half">
+					<h1 class="title is-1">My Cart</h1>
+					<div class="box p-4">
+						<div v-for="product in cartItems" :key="product.id" class="p-4">
 							<article class="media">
 								<figure class="media-left">
 									<p class="image is-64x64">
@@ -21,38 +22,20 @@
 											${{ product.price }}
 										</p>
 									</div>
-									<nav class="level is-mobile">
-										<div class="level-left">
-											<a class="level-item">
-												<span class="icon is-small"
-													><i class="fas fa-reply"></i
-												></span>
-											</a>
-											<a class="level-item">
-												<span class="icon is-small"
-													><i class="fas fa-retweet"></i
-												></span>
-											</a>
-											<a class="level-item">
-												<span class="icon is-small"
-													><i class="fas fa-heart"></i
-												></span>
-											</a>
-										</div>
-									</nav>
 								</div>
 								<div class="media-right">
 									<button class="delete"></button>
 								</div>
 							</article>
 						</div>
-					</tr>
-				</tbody>
-			</table>
-
-			<h3 id="total-price">Total: ${{ totalPrice }}</h3>
-			<div class="buttons">
-				<a class="button is-primary" href="/checkout">Proceed to Checkout</a>
+						<h3 id="total-price" class="">Total: ${{ totalPrice }}</h3>
+						<a
+							class="button is-primary is-fullwidth is-uppercase"
+							href="/checkout"
+							>Proceed to Checkout</a
+						>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
