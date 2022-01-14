@@ -1,34 +1,21 @@
 <template>
 	<div class="container">
 		<section class="section">
-			<nav class="level">
-				<div class="level-item">
-					<div>
-						<p class="heading is-size-3">Your Order is almost ready</p>
-					</div>
+			<h1 class="title is-1">Checkout</h1>
+			<h3 class="subtitle">Payment Information</h3>
+
+			<div class="field is-horizontal">
+				<div class="field-label is-normal">
+					<label class="label">Card Number</label>
 				</div>
-			</nav>
-			<div class="columns is-centered">
-				<div class="column is-one-third">
-					<div class="box">
-						<div class="block">
-							<div
-								class="has-background-primary has-text-white has-text-centered padding-bottom"
-							>
-								<p>Bike</p>
-							</div>
-						</div>
-
-						<!--  text  -->
-						<div class="block">
-							<div class="has-text-centered is-size-5 order-text">
-								<p>We Received your Order</p>
-							</div>
-						</div>
-
-						<!-- button -->
-						<div class="buttons is-centered">
-							<button class="button is-primary is-centered">Track Order</button>
+				<div class="field-body">
+					<div class="field">
+						<div class="control">
+							<input
+								class="input"
+								type="text"
+								placeholder="xxxx xxxx xxxx xxxx"
+							/>
 						</div>
 					</div>
 				</div>
@@ -38,13 +25,7 @@
 </template>
 
 <script>
-export default {
-	name: 'Checkout',
-}
+export default {}
 </script>
 
-<style scoped>
-.order-text {
-	padding-bottom: 2em;
-}
-</style>
+<style></style>
