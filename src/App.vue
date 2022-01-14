@@ -9,7 +9,7 @@
 				<p class="is-size-4">Local Bakery</p>
 			</a>
 
-			<div class="is-hidden-desktop">
+			<div class="is-hidden-desktop field is-grouped">
 				<a class="icon-text navbar-item">
 					<span class="icon">
 						<i class="material-icons"> account_circle </i>

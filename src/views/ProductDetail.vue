@@ -1,10 +1,13 @@
-// TODO: Add breadcrumb navigation (add links)
 <template>
 	<div class="container">
 		<section class="section">
 			<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
 				<ul>
-					<li><a href="#">Previous Page</a></li>
+					<li>
+						<router-link to="/products/" class="navbar-item icon-text">
+							Previous Page
+						</router-link>
+					</li>
 					<li class="is-active">
 						<a href="#">{{ product.title }}</a>
 					</li>

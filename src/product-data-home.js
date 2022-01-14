@@ -3,7 +3,6 @@ import cakeImage3 from './assets/cake-3.jpg'
 import cakeImage5 from './assets/cake-5.jpg'
 import cookiesImage6 from './assets/cookies-6.jpg'
 import cookiesImage1 from './assets/cookies-1.jpg'
-import cookiesImage2 from './assets/cookies-2.jpg'
 import cookiesImage4 from './assets/cookies-4.jpg'
 import cupcakesImage5 from './assets/cupcakes-5.jpg'
 import cupcakesImage3 from './assets/cupcakes-3.jpg'
@@ -58,28 +57,6 @@ export const products = [
 				imageUrl: cookiesImage6,
 			},
 			{
-				id: 8,
-				collectionLink: 'cookies',
-				collection: 'Cookies',
-				productLink: 'sweet-macarons-cookies',
-				title: 'Sweet Macarons Cookies',
-				price: '35.00',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
-				imageUrl: cookiesImage1,
-			},
-			{
-				id: '9',
-				collectionLink: 'cookies',
-				collection: 'Cookies',
-				productLink: 'snickerdoodle-cookies',
-				title: 'Snickerdoodle Cookies',
-				price: '35.00',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
-				imageUrl: cookiesImage2,
-			},
-			{
 				id: '11',
 				collectionLink: 'cookies',
 				collection: 'Cookies',
@@ -89,6 +66,17 @@ export const products = [
 				description:
 					'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
 				imageUrl: cookiesImage4,
+			},
+			{
+				id: 8,
+				collectionLink: 'cookies',
+				collection: 'Cookies',
+				productLink: 'sweet-macarons-cookies',
+				title: 'Sweet Macarons Cookies',
+				price: '35.00',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed vel enim quam. Mauris nisl tellus, fringilla sed cursus eu.',
+				imageUrl: cookiesImage1,
 			},
 		],
 	},
