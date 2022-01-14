@@ -10,20 +10,24 @@
 			</a>
 
 			<div class="is-hidden-desktop field is-grouped">
-				<a class="icon-text navbar-item">
-					<span class="icon">
-						<i class="material-icons"> account_circle </i>
-					</span>
-					<span>Sign in</span>
-				</a>
-				<a class="icon-text navbar-item">
-					<span class="icon">
-						<i class="material-icons">
-							<i class="material-icons"> shopping_cart </i>
-						</i>
-					</span>
-					<span>Cart</span>
-				</a>
+				<router-link to="/sign-in" class="navbar-item icon-text">
+					<a class="icon-text navbar-item">
+						<span class="icon">
+							<i class="material-icons"> account_circle </i>
+						</span>
+						<span>Sign in</span>
+					</a>
+				</router-link>
+				<router-link to="/cart" class="navbar-item icon-text">
+					<a class="icon-text navbar-item">
+						<span class="icon">
+							<i class="material-icons">
+								<i class="material-icons"> shopping_cart </i>
+							</i>
+						</span>
+						<span>Cart</span>
+					</a>
+				</router-link>
 			</div>
 		</div>
 
@@ -36,7 +40,7 @@
 			</div>
 
 			<div class="navbar-end">
-				<router-link to="/login" class="navbar-item icon-text">
+				<router-link to="/sign-in" class="navbar-item icon-text">
 					<span class="icon">
 						<i class="material-icons"> account_circle </i>
 					</span>
@@ -75,5 +79,8 @@
 
 .container {
 	padding-top: 3em;
+}
+
+.main {
 }
 </style>

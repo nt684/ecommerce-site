@@ -1,35 +1,34 @@
 <template>
+	<!-- TODO: Add delivery map -->
 	<div class="container">
 		<section class="section">
-			<nav class="level">
-				<div class="level-item">
-					<div>
-						<p class="heading is-size-3">Your Order is almost ready</p>
-					</div>
-				</div>
-			</nav>
 			<div class="columns is-centered">
-				<div class="column is-one-third">
+				<div class="column is-half">
+					<h1 class="title is-1">Your order is almost ready</h1>
+
 					<div class="box">
 						<div class="block">
-							<div
-								class="has-background-primary has-text-white has-text-centered padding-bottom"
-							>
-								<p>Bike</p>
+							<div class="padding-bottom">
+								<span class="icon-text">
+									<span class="icon has-text-primary">
+										<span class="material-icons"> delivery_dining </span>
+									</span>
+									<span> <strong>We Received your Order</strong></span>
+								</span>
 							</div>
 						</div>
 
 						<!--  text  -->
 						<div class="block">
-							<div class="has-text-centered is-size-5 order-text">
-								<p>We Received your Order</p>
-							</div>
+							<p class="body is-size-6">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
 						</div>
 
 						<!-- button -->
-						<div class="buttons is-centered">
-							<button class="button is-primary is-centered">Track Order</button>
-						</div>
+						<button class="button is-primary is-fullwidth is-uppercase">
+							Track delivery
+						</button>
 					</div>
 				</div>
 			</div>
@@ -46,5 +45,11 @@ export default {
 <style scoped>
 .order-text {
 	padding-bottom: 2em;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 </style>

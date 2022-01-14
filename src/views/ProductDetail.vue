@@ -39,7 +39,9 @@
 						<nav class="level">
 							<div class="field is-grouped">
 								<p class="control">
-									<button class="button is-outlined is-dark custom-button">
+									<button
+										class="button is-outlined is-dark custom-button is-uppercase"
+									>
 										<div class="icon">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
