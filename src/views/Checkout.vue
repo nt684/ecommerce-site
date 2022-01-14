@@ -19,6 +19,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="field-label is-normal">
+					<label class="label">Expiration Date</label>
+				</div>
+				<div class="field-body">
+					<div class="field">
+						<div class="control">
+							<input class="input" type="text" placeholder="mm/yyyy" />
+						</div>
+					</div>
+				</div>
+				<div class="field-label is-normal">
+					<label class="label">Security Code</label>
+				</div>
+				<div class="field-body">
+					<div class="field">
+						<div class="control">
+							<input class="input" type="text" placeholder="xxx" />
+						</div>
+					</div>
+				</div>
+				<div class="buttons">
+					<a class="button is-primary" href="/delivery">Confirm Order</a>
+				</div>
 			</div>
 		</section>
 	</div>
