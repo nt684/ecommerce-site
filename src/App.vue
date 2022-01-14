@@ -5,9 +5,9 @@
 		aria-label="main navigation"
 	>
 		<div class="navbar-brand">
-			<router-link to="/" class="navbar-item">
+			<a href="/products/" class="navbar-item">
 				<p class="is-size-4">Local Bakery</p>
-			</router-link>
+			</a>
 
 			<div class="is-hidden-desktop">
 				<a class="icon-text navbar-item">
@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="navbar-end">
-				<router-link to="/account" class="navbar-item icon-text">
+				<router-link to="/login" class="navbar-item icon-text">
 					<span class="icon">
 						<i class="material-icons"> account_circle </i>
 					</span>

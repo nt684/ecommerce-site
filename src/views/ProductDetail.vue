@@ -4,9 +4,10 @@
 		<section class="section">
 			<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
 				<ul>
-					<li><a href="#">All Products</a></li>
-					<li><a href="#">Collection of products</a></li>
-					<li class="is-active"><a href="#">This Product</a></li>
+					<li><a href="#">Previous Page</a></li>
+					<li class="is-active">
+						<a href="#">{{ product.title }}</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="columns is-tablet">
