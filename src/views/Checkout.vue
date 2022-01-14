@@ -11,9 +11,11 @@
 				<div class="field-body">
 					<div class="field">
 						<div class="control">
-							<input class="input"
-								   type="text"
-								   placeholder="xxxx xxxx xxxx xxxx" />
+							<input
+								class="input"
+								type="text"
+								placeholder="xxxx xxxx xxxx xxxx"
+							/>
 						</div>
 					</div>
 				</div>
@@ -23,9 +25,7 @@
 				<div class="field-body">
 					<div class="field">
 						<div class="control">
-							<input class="input"
-								   type="text"
-								   placeholder="mm/yyyy" />
+							<input class="input" type="text" placeholder="mm/yyyy" />
 						</div>
 					</div>
 				</div>
@@ -35,9 +35,7 @@
 				<div class="field-body">
 					<div class="field">
 						<div class="control">
-							<input class="input"
-								   type="text"
-								   placeholder="xxx" />
+							<input class="input" type="text" placeholder="xxx" />
 						</div>
 					</div>
 				</div>
