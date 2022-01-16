@@ -1,4 +1,7 @@
 <template>
+	<!-- TODO: Make create profile page -->
+	<!-- TODO: Add forgot password page -->
+	<!-- TODO: Add User Sign In -->
 	<div class="container">
 		<section class="section">
 			<div class="columns is-centered">

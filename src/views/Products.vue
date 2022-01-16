@@ -1,7 +1,5 @@
 <template>
 	<!-- TODO: Make cards smaller and scroll when more cards are added w/ arrow icon on right/left -->
-	<!-- TODO: Make create profile page -->
-	<!-- TODO: Add forgot password page -->
 
 	<div class="container">
 		<section class="section">
@@ -16,7 +14,7 @@
 						class="block card-block"
 					>
 						<div class="column">
-							<router-link :to="'/products/' + product.productLink">
+							<router-link :to="'/' + product.productLink">
 								<div class="card">
 									<div class="card-image">
 										<figure class="image">

@@ -1,6 +1,7 @@
 <template>
 	<!-- TODO: make form sizes smaller: zipcode, expiration date, csc -->
 	<!-- TODO: place  expiration date & csc on one line -->
+	<!-- TODO: Make a better Checkout route -->
 	<div class="container">
 		<section class="section">
 			<div class="columns is-centered">
@@ -59,7 +60,7 @@
 
 							<router-link to="/confirm-order" class="navbar-item icon-text">
 								<button class="button is-primary is-fullwidth is-uppercase">
-									Confirm Order
+									Continue
 								</button>
 							</router-link>
 						</div>

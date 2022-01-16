@@ -1,6 +1,7 @@
 <template>
 	<!-- TODO: Fix Total price javascript -->
 	<!-- TODO: Make it possible to delete cart items -->
+	<!-- TODO: Add to side bar -->
 	<div class="container">
 		<section class="section">
 			<div class="columns is-centered">
@@ -32,7 +33,7 @@
 						<a
 							class="button is-primary is-fullwidth is-uppercase"
 							href="/checkout"
-							>Proceed to Checkout</a
+							>Continue</a
 						>
 					</div>
 				</div>
@@ -54,7 +55,7 @@ export default {
 	},
 	computed: {
 		totalPrice() {
-			return this.cartItems.reduce((sum, item) => sum + Number(item.price))
+			return this.cartItems.reduce((sum, item) => sum + Number(item.price), 0)
 		},
 	},
 }

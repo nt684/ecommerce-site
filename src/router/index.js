@@ -1,8 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Products from '../views/Products.vue'
 
 const routes = [
 	{
-		path: '/products/:productLink',
+		path: '/',
+		name: 'Products',
+		component: Products,
+	},
+	{
+		path: '/:productLink',
 		name: 'ProductDetail',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
@@ -40,16 +46,6 @@ const routes = [
 			import(/* webpackChunkName: "Checkout" */ '../views/Checkout.vue'),
 	},
 	{
-		path: '/products',
-		name: 'Products',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: ":collectionLink" */ '../views/Products.vue'),
-	},
-
-	{
 		path: '/sign-in',
 		name: 'UserSignIn',
 		// route level code-splitting
@@ -77,10 +73,6 @@ const routes = [
 			import(
 				/* webpackChunkName: "confirm order" */ '../views/ConfirmOrder.vue'
 			),
-	},
-	{
-		path: '/',
-		redirect: '/products',
 	},
 ]
 

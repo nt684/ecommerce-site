@@ -4,7 +4,7 @@
 			<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
 				<ul>
 					<li>
-						<router-link to="/products/" class="navbar-item icon-text">
+						<router-link to="/" class="navbar-item icon-text">
 							Previous Page
 						</router-link>
 					</li>

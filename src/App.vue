@@ -5,7 +5,7 @@
 		aria-label="main navigation"
 	>
 		<div class="navbar-brand">
-			<a href="/products/" class="navbar-item">
+			<a href="/" class="navbar-item">
 				<p class="is-size-4">Local Bakery</p>
 			</a>
 
@@ -33,10 +33,7 @@
 
 		<div id="navbarLocalBakery" class="navbar-menu">
 			<div class="navbar-start">
-				<a class="navbar-item" href="/products/#cakes"> Cakes </a>
-				<a class="navbar-item" href="/products/#cookies"> Cookies </a>
-				<a class="navbar-item" href="/products/#cupcakes"> Cupcakes </a>
-				<a class="navbar-item" href="/products/#pies"> Pies </a>
+				<a class="navbar-item" href="/"> Products </a>
 			</div>
 
 			<div class="navbar-end">
@@ -79,8 +76,5 @@
 
 .container {
 	padding-top: 3em;
-}
-
-.main {
 }
 </style>
