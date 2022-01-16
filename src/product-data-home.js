@@ -13,9 +13,11 @@ import piesImage3 from './assets/pies-3.jpg'
 
 export const products = [
 	{
-		Cakes: [
+		id: '1',
+		title: 'Cakes',
+		cardData: [
 			{
-				id: 1,
+				id: 5,
 				productLink: 'cookie-monster-cake',
 				title: 'Cookie Monster Cake',
 				price: '60.00',
@@ -33,7 +35,7 @@ export const products = [
 				imageUrl: cakeImage5,
 			},
 			{
-				id: '3',
+				id: '7',
 				productLink: 'piece-of-heaven-cake',
 				title: 'Piece of Heaven Cake',
 				price: '20.00',
@@ -44,9 +46,11 @@ export const products = [
 		],
 	},
 	{
-		Cookies: [
+		id: '2',
+		title: 'Cookies',
+		cardData: [
 			{
-				id: '13',
+				id: '8',
 				collectionLink: 'cookies',
 				collection: 'Cookies',
 				productLink: 'fudgesicle-cookies',
@@ -57,7 +61,7 @@ export const products = [
 				imageUrl: cookiesImage6,
 			},
 			{
-				id: '11',
+				id: '9',
 				collectionLink: 'cookies',
 				collection: 'Cookies',
 				productLink: 'chocolate-chip-cookies',
@@ -68,7 +72,7 @@ export const products = [
 				imageUrl: cookiesImage4,
 			},
 			{
-				id: 8,
+				id: '10',
 				collectionLink: 'cookies',
 				collection: 'Cookies',
 				productLink: 'sweet-macarons-cookies',
@@ -81,9 +85,11 @@ export const products = [
 		],
 	},
 	{
-		Cupcakes: [
+		id: '3',
+		title: 'Cupcakes',
+		cardData: [
 			{
-				id: '19',
+				id: '11',
 				collectionLink: 'cupcakes',
 				collection: 'Cupcakes',
 				productLink: 'berry-burst-cupcakes',
@@ -94,7 +100,7 @@ export const products = [
 				imageUrl: cupcakesImage5,
 			},
 			{
-				id: '17',
+				id: '12',
 				collectionLink: 'cupcakes',
 				collection: 'Cupcakes',
 				productLink: 'german-chocolate-cupcakes',
@@ -105,7 +111,7 @@ export const products = [
 				imageUrl: cupcakesImage3,
 			},
 			{
-				id: '16',
+				id: '13',
 				collectionLink: 'cupcakes',
 				collection: 'Cupcakes',
 				productLink: 'strawberry-cream-cupcakes',
@@ -118,9 +124,11 @@ export const products = [
 		],
 	},
 	{
-		Pies: [
+		id: '4',
+		title: 'Pies',
+		cardData: [
 			{
-				id: '24',
+				id: '14',
 				collectionLink: 'pies',
 				collection: 'Pies',
 				productLink: 'Apple-carmel-pie',
@@ -131,7 +139,7 @@ export const products = [
 				imageUrl: piesImage1,
 			},
 			{
-				id: '26',
+				id: '15',
 				collectionLink: 'pies',
 				collection: 'Pies',
 				productLink: 'grannys-apple-pie',
@@ -142,7 +150,7 @@ export const products = [
 				imageUrl: piesImage2,
 			},
 			{
-				id: '25',
+				id: '16',
 				collectionLink: 'pies',
 				collection: 'Pies',
 				productLink: 'cherry-pie',
