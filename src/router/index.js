@@ -8,15 +8,6 @@ const routes = [
 		component: Products,
 	},
 	{
-		path: '/dashboard',
-		name: 'Dashboard',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "dashboard" */ '../views/Dashboard.vue'),
-	},
-	{
 		path: '/:productLink',
 		name: 'ProductDetail',
 		// route level code-splitting
@@ -26,15 +17,6 @@ const routes = [
 			import(
 				/* webpackChunkName: ":productLink" */ '../views/ProductDetail.vue'
 			),
-	},
-	{
-		path: '/cart',
-		name: 'ShoppingCart',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "cart" */ '../views/ShoppingCart.vue'),
 	},
 	{
 		path: '/delivery',

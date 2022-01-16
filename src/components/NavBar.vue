@@ -37,34 +37,37 @@
 			</div>
 
 			<div class="navbar-end">
-				<router-link to="/sign-in" class="navbar-item icon-text">
+				<router-link to="/sign-in" class="navbar-item">
 					<span class="icon">
 						<i class="material-icons"> account_circle </i>
 					</span>
-					<span>Sign in</span>
 				</router-link>
-
-				<router-link to="/cart" class="navbar-item icon-text">
-					<span class="icon">
-						<i class="material-icons">
-							<i class="material-icons"> shopping_cart </i>
-						</i>
+				<a class="navbar-item">
+					<span class="icon" @click="toggleSidebar">
+						<i class="material-icons"> shopping_cart </i>
 					</span>
-					<span>Cart</span>
-				</router-link>
+				</a>
 			</div>
 		</div>
 	</nav>
 </template>
 
 <script>
+import { collapsed, toggleSidebar } from './sidebar/state'
+
 export default {
 	name: 'NavBar',
+	setup() {
+		return { collapsed, toggleSidebar }
+	},
 }
 </script>
 
 <style scoped>
 .navbar-brand {
 	justify-content: space-between;
+}
+.shopping-cart-button {
+	border: 0;
 }
 </style>

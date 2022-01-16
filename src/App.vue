@@ -1,7 +1,7 @@
 <template>
-	<!-- <NavBar /> -->
+	<NavBar />
 	<Sidebar />
-	<div :style="{ 'margin-left': sidebarWidth }">
+	<div :style="{ 'margin-right': sidebarWidth }">
 		<router-view />
 	</div>
 	<Footer />
@@ -9,14 +9,14 @@
 
 <script>
 import Sidebar from './components/sidebar/Sidebar.vue'
-// import NavBar from './components/NavBar.vue'
+import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
 import { sidebarWidth } from './components/sidebar/state'
 
 export default {
 	name: 'App',
 	components: {
-		// NavBar,
+		NavBar,
 		Footer,
 		Sidebar,
 	},
