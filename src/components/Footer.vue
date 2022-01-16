@@ -3,7 +3,6 @@
 		<div class="content has-text-centered">
 			<p>
 				<strong>Local Bakery</strong>
-				>
 			</p>
 		</div>
 	</footer>
