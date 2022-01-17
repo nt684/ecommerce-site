@@ -1,18 +1,27 @@
 <template>
 	<NavBar />
-	<router-view />
+	<Sidebar />
+	<div :style="{ 'margin-right': sidebarWidth }">
+		<router-view />
+	</div>
 	<Footer />
 </template>
 
 <script>
+import Sidebar from './components/sidebar/Sidebar.vue'
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import { sidebarWidth } from './components/sidebar/state'
 
 export default {
 	name: 'App',
 	components: {
 		NavBar,
 		Footer,
+		Sidebar,
+	},
+	setup() {
+		return { sidebarWidth }
 	},
 }
 </script>
@@ -37,6 +46,6 @@ html {
 	min-height: 100%;
 }
 body {
-	margin: 0 0 100px; /* bottom = footer height */
+	margin: 0 0 100px;
 }
 </style>

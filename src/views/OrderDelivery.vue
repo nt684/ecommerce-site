@@ -1,11 +1,11 @@
 <template>
 	<!-- TODO: Add delivery map -->
+	<!-- TODO: Improve delivery path -->
 	<div class="container">
 		<section class="section">
 			<div class="columns is-centered">
 				<div class="column is-half">
-					<h1 class="title is-1">Your order is almost ready</h1>
-
+					<h1 class="title is-3">Your order is almost ready</h1>
 					<div class="box">
 						<div class="block">
 							<div class="padding-bottom">
@@ -17,15 +17,11 @@
 								</span>
 							</div>
 						</div>
-
-						<!--  text  -->
 						<div class="block">
 							<p class="body is-size-6">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 						</div>
-
-						<!-- button -->
 						<button class="button is-primary is-fullwidth is-uppercase">
 							Track delivery
 						</button>

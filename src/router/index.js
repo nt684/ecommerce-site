@@ -19,31 +19,26 @@ const routes = [
 			),
 	},
 	{
-		path: '/cart',
-		name: 'ShoppingCart',
+		path: '/order/delivery',
+		name: 'OrderDelivery',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "cart" */ '../views/ShoppingCart.vue'),
+			import(
+				/* webpackChunkName: "OrderDelivery" */ '../views/OrderDelivery.vue'
+			),
 	},
 	{
-		path: '/delivery',
-		name: 'Delivery',
+		path: '/order/checkout',
+		name: 'OrderCheckout',
 		// route level code-splitting
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "delivery" */ '../views/Delivery.vue'),
-	},
-	{
-		path: '/checkout',
-		name: 'Checkout',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "Checkout" */ '../views/Checkout.vue'),
+			import(
+				/* webpackChunkName: "OrderCheckout" */ '../views/OrderCheckout.vue'
+			),
 	},
 	{
 		path: '/sign-in',
@@ -52,7 +47,7 @@ const routes = [
 		// this generates a separate chunk (about.[hash].js) for this route
 		// which is lazy-loaded when the route is visited.
 		component: () =>
-			import(/* webpackChunkName: "Sign in" */ '../views/UserSignIn.vue'),
+			import(/* webpackChunkName: "UserSignIn" */ '../views/UserSignIn.vue'),
 	},
 	{
 		path: '/account',
@@ -62,17 +57,6 @@ const routes = [
 		// which is lazy-loaded when the route is visited.
 		component: () =>
 			import(/* webpackChunkName: "account" */ '../views/UserAccount.vue'),
-	},
-	{
-		path: '/confirm-order',
-		name: 'ConfirmOrder',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(
-				/* webpackChunkName: "confirm order" */ '../views/ConfirmOrder.vue'
-			),
 	},
 ]
 

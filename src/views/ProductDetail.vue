@@ -1,7 +1,10 @@
 <template>
 	<div class="container">
 		<section class="section">
-			<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+			<nav
+				class="breadcrumb has-arrow-separator is-hidden-mobile"
+				aria-label="breadcrumbs"
+			>
 				<ul>
 					<li>
 						<router-link to="/" class="navbar-item icon-text">
@@ -27,7 +30,7 @@
 				<div class="column">
 					<div class="block block-content">
 						<div class="content">
-							<h3 class="title is-1">
+							<h3 class="title is-3">
 								{{ product.title }}
 							</h3>
 							<p class="product-description">
@@ -43,20 +46,7 @@
 										class="button is-outlined is-dark custom-button is-uppercase"
 									>
 										<div class="icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												class="feather feather-minus"
-											>
-												<line x1="5" y1="12" x2="19" y2="12"></line>
-											</svg>
+											<span class="material-icons"> remove </span>
 										</div>
 									</button>
 								</p>
@@ -71,21 +61,7 @@
 								<p class="control">
 									<button class="button is-outlined is-dark">
 										<div class="icon">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												class="feather feather-plus"
-											>
-												<line x1="12" y1="5" x2="12" y2="19"></line>
-												<line x1="5" y1="12" x2="19" y2="12"></line>
-											</svg>
+											<span class="material-icons"> remove </span>
 										</div>
 									</button>
 								</p>
