@@ -46,6 +46,6 @@ html {
 	min-height: 100%;
 }
 body {
-	margin: 0 0 100px; /* bottom = footer height */
+	margin: 0 0 100px;
 }
 </style>

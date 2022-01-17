@@ -6,7 +6,9 @@
 			<h3 id="total-price" class="subtitle is-6">
 				Subtotal: ${{ totalPrice }}
 			</h3>
-			<a class="button is-primary" href="/checkout">Proceed to checkout</a>
+			<a class="button is-primary" href="/order/checkout"
+				>Proceed to checkout</a
+			>
 		</div>
 		<div v-for="product in cartItems" :key="product.id" class="p-4">
 			<article class="media">
